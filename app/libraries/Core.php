@@ -48,7 +48,7 @@
             }
                 else
             {
-                return array("Landingpages", "index");
+                return array("Home", "index");
             }
         }
     }
