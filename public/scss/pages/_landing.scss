@@ -1,0 +1,43 @@
+section.landing__section{
+    @include displayPosition($direction: row, $j-content: center);
+    height: 65rem;
+    width: 100%;
+    div.intro{
+        @include displayPosition($direction: row,$j-content: space-evenly, $align-i: center);
+        width: 70%;
+        div{
+            @include displayPosition($direction: column, $align-i: center);
+            width: 40%;
+            display: flex;
+            h1{
+                @include TextStyling($family: $open-sans, $size: 48px, $weight: 700, $color: $DarkBlue);
+                text-align: center;
+                margin-bottom: 5rem;
+            }
+            button{
+                @include Btn__With--border;
+            }
+        }
+        div{
+            width: 40%;
+            div.circle-1{
+                @include CircleStyling($color: $DarkBlue, $width: 360px, $height: 360px);
+                // * Positioning
+                top:30%;
+                right: 30%;
+            }
+            img{
+                position: relative;
+                width: 620px;
+                height: 620px;
+                border-radius: 50rem;
+            }
+            div.circle-2{
+                @include CircleStyling($color: $LightBlue, $width: 480px, $height: 480px);
+                // * Positioning
+                top:70%;
+                right: 15%;
+            }
+        }
+    }
+}

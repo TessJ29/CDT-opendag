@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: normal;
+  justify-content: center;
+  align-items: normal;
+  width: 100%;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
+  width: 80%;
+}
+header nav div.top__navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem 0rem 0rem 0rem;
+}
+header nav div.top__navbar ul.navbar__logo li {
+  padding: 0rem 1rem;
+  list-style-type: none;
+}
+header nav div.top__navbar ul.navbar__logo li img {
+  height: 5rem;
+}
+header nav div.top__navbar ul.navbar__contact--links {
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: flex-end;
+  padding: 1rem 0rem;
+}
+header nav div.top__navbar ul.navbar__contact--links li {
+  display: flex;
+  flex-direction: normal;
+  justify-content: normal;
+  align-items: center;
+  padding: 0rem 1rem;
+  list-style-type: none;
+}
+header nav div.top__navbar ul.navbar__contact--links li ion-icon {
+  padding: 0rem 0.5rem;
+  font-size: 20px;
+  color: #ABB8C3;
+}
+header nav div.top__navbar ul.navbar__contact--links li a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ABB8C3;
+}
+header nav div.top__navbar ul.navbar__media--links {
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: flex-end;
+  padding: 1rem 0rem;
+}
+header nav div.top__navbar ul.navbar__media--links li {
+  list-style-type: none;
+}
+header nav div.top__navbar ul.navbar__media--links li a.navbar__media--link {
+  padding: 0rem 0.7rem;
+  text-decoration: none;
+}
+header nav div.top__navbar ul.navbar__media--links li a.navbar__media--link ion-icon {
+  font-size: 20px;
+  color: #ABB8C3;
+}
+header nav div.bottom__navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: normal;
+  padding: 1rem 0rem;
+  border-top: solid 2px #ABB8C3;
+}
+header nav div.bottom__navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: normal;
+}
+header nav div.bottom__navbar ul li {
+  cursor: pointer;
+  padding: 0rem 2rem;
+  list-style-type: none;
+}
+header nav div.bottom__navbar ul li a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #003C51;
+}
+header nav div.bottom__navbar ul li a.active {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #003C51;
+}
+header nav div.bottom__navbar button {
+  display: flex;
+  flex-direction: normal;
+  justify-content: normal;
+  align-items: center;
+  margin: 0rem 1rem;
+  background-color: #ffffff;
+  border: solid 4px #62E3FF;
+  border-radius: 5rem;
+  padding: 0.5rem 0.5rem;
+}
+header nav div.bottom__navbar button a {
+  padding: 0rem 0rem 0rem 0.5rem;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #003C51;
+}
+header nav div.bottom__navbar button ion-icon {
+  padding: 0rem 0.5rem;
+  font-size: 24px;
+  color: #003C51;
+}
+
+@media only screen and (max-width: 1090) {
+  div#mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+  }
+  div#mobile-menu.is-active span.bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  div#mobile-menu.is-active span.bar:nth-child(2) {
+    opacity: 0;
+  }
+  div#mobile-menu.is-active span.bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+footer {
+  background-color: #3E3E3E;
+  width: 100%;
+}
+footer div.footer__top--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: normal;
+}
+footer div.footer__top--container div.footer__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: normal;
+  width: 75%;
+}
+footer div.footer__top--container div.footer__top div {
+  margin-bottom: 4rem;
+}
+footer div.footer__top--container div.footer__top div h3 {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #62E3FF;
+  padding: 2rem 0rem 2rem 0rem;
+}
+footer div.footer__top--container div.footer__top div ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: normal;
+}
+footer div.footer__top--container div.footer__top div ul li ion-icon {
+  font-size: 20px;
+  color: #C7C7C7;
+  padding: 0rem 1rem 0rem 0rem;
+  --ionicon-stroke-width: 50px;
+}
+footer div.footer__top--container div.footer__top div ul li p {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #C7C7C7;
+  cursor: pointer;
+  padding: 0rem 0rem 1rem 0rem;
+}
+footer div.footer__top--container div.footer__top div ul li p a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #C7C7C7;
+}
+footer div.footer__bottom {
+  display: flex;
+  flex-direction: normal;
+  justify-content: center;
+  align-items: normal;
+  padding: 1rem;
+  border-top: solid 2px #5B5B5B;
+}
+footer div.footer__bottom p {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #C7C7C7;
+}
+
+section.landing__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: normal;
+  height: 65rem;
+  width: 100%;
+}
+section.landing__section div.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+}
+section.landing__section div.intro div {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+  width: 40%;
+  display: flex;
+}
+section.landing__section div.intro div h1 {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #003C51;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+section.landing__section div.intro div button {
+  display: flex;
+  flex-direction: normal;
+  justify-content: normal;
+  align-items: center;
+  margin: 0rem 1rem;
+  background-color: #ffffff;
+  border: solid 4px #62E3FF;
+  border-radius: 5rem;
+  padding: 0.5rem 0.5rem;
+}
+section.landing__section div.intro div button a {
+  padding: 0rem 0rem 0rem 0.5rem;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #003C51;
+}
+section.landing__section div.intro div button ion-icon {
+  padding: 0rem 0.5rem;
+  font-size: 24px;
+  color: #003C51;
+}
+section.landing__section div.intro div {
+  width: 40%;
+}
+section.landing__section div.intro div div.circle-1 {
+  position: absolute;
+  border-radius: 50rem;
+  background-color: #003C51;
+  width: 360px;
+  height: 360px;
+  top: 30%;
+  right: 30%;
+}
+section.landing__section div.intro div img {
+  position: relative;
+  width: 620px;
+  height: 620px;
+  border-radius: 50rem;
+}
+section.landing__section div.intro div div.circle-2 {
+  position: absolute;
+  border-radius: 50rem;
+  background-color: #62E3FF;
+  width: 480px;
+  height: 480px;
+  top: 70%;
+  right: 15%;
+}/*# sourceMappingURL=main.css.map */

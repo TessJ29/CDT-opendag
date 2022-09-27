@@ -1,0 +1,31 @@
+//* With this mixin all of the display flex attributes can be used in 1 line istead of 4/5
+@mixin displayPosition($direction: normal, $j-content: normal, $align-i: normal){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $j-content;
+    align-items: $align-i;
+}
+
+//* This mixin can be used to set the font size, color and or family for text
+@mixin TextStyling($family: normal, $size: 16px, $weight: 400, $color: black){
+    text-decoration: none;
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+//* With this mixin it is easy to style ion-icons
+@mixin IconStyling($size: 16px, $color: black){
+    font-size: $size;
+    color: $color;
+}
+
+//* This mixin is meant for the background circles.
+@mixin CircleStyling($color: black, $width: 0px, $height: 0px){
+    position: absolute;
+    border-radius: 50rem;
+    background-color: $color;
+    width: $width;
+    height: $width;
+}
