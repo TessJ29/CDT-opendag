@@ -1,0 +1,47 @@
+section.workshops{
+    margin: 3rem 0rem 3rem 0rem;
+    @include displayPosition($direction: column, $align-i: center);
+    width:100%;
+    div.event{
+        @include displayPosition($direction: row, $j-content: space-between);
+        width: 70%;
+        margin: 3rem 0rem 3rem 0rem;
+        div.event__info{
+            margin: 0 3rem 0 3rem;
+            width: 50%;
+            @include displayPosition($direction: column, $j-content: space-evenly);
+            h2{
+                @include TextStyling($family: $oswald, $size: 48px, $weight: 700, $color: $DarkBlue);
+            }
+            div.line{
+                color: $AmberGrey;
+                height: 1rem;
+                width: 400px;
+            }
+            div.data{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                p{
+                    @include TextStyling($family: $open-sans, $size: 18px, $weight: 400, $color: $AmberGrey);
+                }
+            }
+            p{
+                @include TextStyling($family: $open-sans, $size: 20px, $weight: 400, $color: $Black);
+            }
+        }
+        div{
+            @include displayPosition($direction: column, $align-i: center);
+            img{
+                // position: relative;
+                object-fit: cover;
+                width: 400px;
+                height: 400px;
+                border-radius: 50%;
+                margin: 2rem 0rem 2rem 0rem;
+            }
+            button{
+                @include Btn__With--border;
+            }
+        }
+    }
+}

@@ -14,7 +14,7 @@ header{
     width:100%;
     nav{
         @include displayPosition($direction: column);
-        width: 70%;
+        width: 80%;
         div.top__navbar{
             @include displayPosition($direction: row, $j-content: space-between, $align-i: flex-end);
             padding: 1rem 0rem 0rem 0rem;
@@ -70,6 +70,9 @@ header{
                     list-style-type: none;
                     a{
                         @include TextStyling($family: $open-sans, $size: 16px, $weight: 400, $color: $DarkBlue);
+                        &.active{
+                            @include TextStyling($family: $open-sans, $size: 16px, $weight: 700, $color: $DarkBlue);                            
+                        }
                     }
                 }
             }
@@ -79,4 +82,23 @@ header{
             }
         }
     }
+}
+
+@media only screen and(max-width:1090) {
+    div#mobile-menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+    div#mobile-menu.is-active span.bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    div#mobile-menu.is-active span.bar:nth-child(2){
+        opacity: 0;
+    }
+    div#mobile-menu.is-active span.bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
 }
