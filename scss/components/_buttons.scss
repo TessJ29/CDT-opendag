@@ -6,7 +6,9 @@
     border: solid 4px $LightBlue;
     border-radius: 5rem;
     padding: 0.5rem 0.5rem;
+    // &.class {
 
+    // }
     a{
         padding: 0rem 0rem 0rem 0.5rem;
         @include TextStyling($family: $open-sans, $size: 20px, $weight: 400, $color: $DarkBlue);

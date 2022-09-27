@@ -64,7 +64,7 @@
                             <a href="./course.php">OPLEIDINGEN</a>
                         </li>
                         <li>
-                            <a href="./workshop.php">WORKSHOPS</a>
+                            <a href="./workshop.php">VOORLICHTINGEN</a>
                         </li>
                     </ul>
                     <button>
@@ -170,9 +170,13 @@
                 <p>MBO Utrecht ICT Academie 2022. All rights reserved.</p>
             </div>
         </footer>
+
         <!-- Javascripts -->
+
         <script src="./js/script.js"></script>
+
         <!-- Icon Javascripts -->
+
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>

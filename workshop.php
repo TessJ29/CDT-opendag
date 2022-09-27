@@ -59,7 +59,7 @@
                             <a href="./course.php">OPLEIDINGEN</a>
                         </li>
                         <li>
-                            <a class="active" href="./workshop.php">WORKSHOPS</a>
+                            <a class="active" href="./workshop.php">VOORLICHTINGEN</a>
                         </li>
                     </ul>
                     <button>
@@ -72,6 +72,75 @@
 
         <!-- Content -->
         
+        <section class="workshops">
+            <div class="event">
+                <div class="event__info">
+                    <h2>INFORMATIE AVOND VOOR OUDERS</h2>
+                    <div class="line"></div>
+                    <div class="data">
+                        <p>DONDERDAG 20 OKTOBER 2022</p>
+                        <p>19:30 TOT 21:00</p>
+                    </div>
+                    <p>
+                        Informatieavond speciaal voor ouders. Onderwerpen die aan bod komen zijn onder andere:
+                        Hoe kun je je kind helpen bij het maken van de studiekeuze?
+                        <br>
+                        MBO onderwijs
+                        Begeleiding
+                        Niveaus
+                        Schoolkosten
+                    </p>
+                </div>
+                <div class="">
+                    <img src="./img/ws1.png" alt="">
+                    <div></div>
+                    <button>
+                        <a href="">INSCHRIJVEN</a>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+            <div class="event">
+                <div>
+                    <img src="./img/ws2.png" alt="">
+                    <div></div>
+                </div>
+                <div class="event__info">
+                    <h2>OPENDAGEN</h2>
+                    <div class="line"></div>
+                    <div class="data">                        
+                        <p>DONDERDAG 15 NOVEMBER 2022</p>
+                        <p>18:00 TOT 20:30</p>
+                        <p>DONDERDAG 21 JANUARI 2023</p>
+                        <p>10:00 TOT 13:00</p>
+                        <p>DONDERDAG 16 MAART 2023</p>
+                        <p>18:00 TOT 20:30</p>
+                    </div>
+                    <p>Je bent van harte welkom op onze Open Dag! Kom sfeer proeven op dinsdag 15 november en kijk of MBO Utrecht bij je past.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="event__info">
+                    <h2>ORIENTATIË WORKSHOPS</h2>
+                    <div class="line"></div>
+                    <div class="data">
+                        <p>DONDERDAG 1 DECEMBER 2022</p>
+                        <p>DONDERDAG 16 FEBRUARI 2023</p>
+                        <p>DONDERDAG 23 MAART 2023</p>
+                    </div>
+                    <p>Tijdens een oriëntatieworkshop kun je ervaren hoe het is om bij ons op school te zitten en leer je meer over de verschillende opleidingen bij MBO Utrecht.</p>
+                </div>
+                <div>
+                <img src="./img/ws3.png" alt="">
+                    <div></div>
+                    <button>
+                        <a href="">INSCHRIJVEN</a>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </section>
+
         <!-- Footer -->
 
         <footer>
