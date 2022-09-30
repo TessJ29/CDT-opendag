@@ -68,7 +68,7 @@
                         </li>
                     </ul>
                     <button>
-                        <a href="">Enquette</a>
+                        <a href="">Inloggen en Registreren</a>
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </button>
                 </div>
