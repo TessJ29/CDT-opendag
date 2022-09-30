@@ -58,13 +58,13 @@
                             <a class="active" href="./index.php">HOME</a>
                         </li>
                         <li>
-                            <a href="./about.php">OVER MBO UTRECHT</a>
+                            <a href="/about">OVER MBO UTRECHT</a>
                         </li>
                         <li>
-                            <a href="./course.php">OPLEIDINGEN</a>
+                            <a href="/course">OPLEIDINGEN</a>
                         </li>
                         <li>
-                            <a href="./workshop.php">VOORLICHTINGEN</a>
+                            <a href="/workshop">VOORLICHTINGEN</a>
                         </li>
                     </ul>
                     <button>

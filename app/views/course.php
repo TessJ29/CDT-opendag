@@ -86,20 +86,20 @@
     </header>
 
     <section class="landing__section">
-            <div class="intro">
+        <div class="intro">
+            <div>
+                <h1>MBO Utrecht ICT opleidingen</h1>
+            </div>
+            <div>
+                <div class="circle-1"></div>
+                <div class="circle-2"></div>
                 <div>
-                    <h1>MBO Utrecht ICT opleidingen</h1>
-                </div>
-                <div>
-                    <div class="circle-1"></div>
-                    <div class="circle-2"></div>
-                    <div>
-                        <img src="./img/Coursepageimage.jpg" alt="">
-                    </div>
+                    <img src="./img/Coursepageimage.jpg" alt="">
                 </div>
             </div>
-            <!-- <img src="./img/mbologo.png" alt=""> -->
-        </section>
+        </div>
+        <!-- <img src="./img/mbologo.png" alt=""> -->
+    </section>
 
     <section class="course_section">
         <div class="cards">
@@ -128,14 +128,24 @@
         </div>
         </div>
         <!-- tweede menu bar met dropdown menu -->
-        
-        <button onclick="myFunction()">
+        <nav>
+            <div class="SD-information">
+                <button onclick="myFunction()">
                     <a>Meer lezen</a>
                     <ion-icon name="arrow-forward-outline"></ion-icon>
                 </button>
                 <div id="SD">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat est quidem iusto? Repudiandae corporis ullam corrupti, tempore odio eos esse, eveniet quaerat veritatis non aliquam dicta praesentium dolorem vitae! Sequi.
+                    SD
                 </div>
+            </div>
+            <button onclick="myFunction()">
+                <a>Meer lezen</a>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+            <div id="ED">
+                ED
+            </div>
+        </nav>
     </section>
 
     <!-- Footer -->
