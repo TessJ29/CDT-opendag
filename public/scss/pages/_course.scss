@@ -1,0 +1,49 @@
+@import'../components/buttons';
+// Banner / image */
+
+div.course-intro {
+    
+}
+
+// Cards
+section.course_section{
+    @include displayPosition($direction: column, $align-i: center);
+    div.cards {
+        margin: 0%;
+        padding: 0%;    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        div.card1, div.card2, div.card3, div.card4 {
+            width: 25%;
+            height: 50%;
+            padding: 0rem 1rem;
+            list-style-type: none;
+        }
+        div.card1, div.card2, div.card3, div.card4 {
+            margin: 0;
+            div.cardtitle1 {
+                padding-bottom: 1.5rem;
+            }
+            div.cardtitle2 {
+                padding-bottom: .35rem;
+            }
+        }
+    } 
+}
+nav {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  button {
+    @include Btn__Without--border;
+  }
+}
+// Icons
+ion-icon {
+    color: #62E3FF;
+}
+
+
+// .show {display:block;}

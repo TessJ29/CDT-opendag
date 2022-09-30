@@ -361,6 +361,68 @@ section.landing__section div.intro div div.circle-2 {
   }
 }
 
+section.course_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+}
+section.course_section div.cards {
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+section.course_section div.cards div.card1, section.course_section div.cards div.card2, section.course_section div.cards div.card3, section.course_section div.cards div.card4 {
+  width: 25%;
+  height: 50%;
+  padding: 0rem 1rem;
+  list-style-type: none;
+}
+section.course_section div.cards div.card1, section.course_section div.cards div.card2, section.course_section div.cards div.card3, section.course_section div.cards div.card4 {
+  margin: 0;
+}
+section.course_section div.cards div.card1 div.cardtitle1, section.course_section div.cards div.card2 div.cardtitle1, section.course_section div.cards div.card3 div.cardtitle1, section.course_section div.cards div.card4 div.cardtitle1 {
+  padding-bottom: 1.5rem;
+}
+section.course_section div.cards div.card1 div.cardtitle2, section.course_section div.cards div.card2 div.cardtitle2, section.course_section div.cards div.card3 div.cardtitle2, section.course_section div.cards div.card4 div.cardtitle2 {
+  padding-bottom: 0.35rem;
+}
+
+nav {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+nav button {
+  display: flex;
+  flex-direction: normal;
+  justify-content: normal;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  border: none;
+  background-color: #ffffff;
+}
+nav button a {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #62E3FF;
+  letter-spacing: 2px;
+}
+nav button ion-icon {
+  padding: 0.2rem 0.5rem 0rem 0.5rem;
+  font-size: 20px;
+  color: #62E3FF;
+}
+
+ion-icon {
+  color: #62E3FF;
+}
+
 section.workshops {
   margin: 3rem 0rem 3rem 0rem;
   display: flex;
