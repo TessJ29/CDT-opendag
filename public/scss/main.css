@@ -311,6 +311,7 @@ section.landing__section div.intro div div.circle-1 {
   height: 360px;
   top: 47%;
   left: 60%;
+  z-index: -1;
 }
 @media screen and (max-width: 1600px) {
   section.landing__section div.intro div div.circle-1 {
@@ -324,6 +325,7 @@ section.landing__section div.intro div div.circle-1 {
     height: 360px;
     top: 90%;
     left: 40%;
+    z-index: -1;
   }
 }
 section.landing__section div.intro div img {
@@ -345,6 +347,7 @@ section.landing__section div.intro div div.circle-2 {
   height: 480px;
   top: 95%;
   left: 70%;
+  z-index: -1;
 }
 @media screen and (max-width: 1600px) {
   section.landing__section div.intro div div.circle-2 {
@@ -358,7 +361,63 @@ section.landing__section div.intro div div.circle-2 {
     height: 480px;
     top: 120%;
     left: 65%;
+    z-index: -1;
   }
+}
+
+section.workshop__hero {
+  margin: 5rem 0rem 0rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+}
+section.workshop__hero img {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+}
+section.workshop__hero div.circle-1 {
+  position: absolute;
+  content: "";
+  display: block;
+  transform: translate(-50%, -50%);
+  border-radius: 50rem;
+  background-color: #62E3FF;
+  width: 480px;
+  height: 480px;
+  top: 50%;
+  left: 35%;
+  z-index: -1;
+}
+section.workshop__hero div.circle-2 {
+  position: absolute;
+  content: "";
+  display: block;
+  transform: translate(-50%, -50%);
+  border-radius: 50rem;
+  background-color: #49A8BD;
+  width: 410px;
+  height: 410px;
+  top: 55%;
+  left: 67%;
+  z-index: -1;
+}
+section.workshop__hero div.circle-3 {
+  position: absolute;
+  content: "";
+  display: block;
+  transform: translate(-50%, -50%);
+  border-radius: 50rem;
+  background-color: #003C51;
+  width: 360px;
+  height: 360px;
+  top: 80%;
+  left: 35%;
+  z-index: -1;
 }
 
 section.workshops {
@@ -393,9 +452,9 @@ section.workshops div.event div.event__info h2 {
   color: #003C51;
 }
 section.workshops div.event div.event__info div.line {
-  color: #868686;
-  height: 1rem;
-  width: 400px;
+  background-color: #868686;
+  height: 1px;
+  width: 40rem;
 }
 section.workshops div.event div.event__info div.data {
   display: grid;
@@ -407,6 +466,7 @@ section.workshops div.event div.event__info div.data p {
   font-size: 18px;
   font-weight: 400;
   color: #868686;
+  line-height: 2.5rem;
 }
 section.workshops div.event div.event__info p {
   text-decoration: none;
@@ -415,13 +475,14 @@ section.workshops div.event div.event__info p {
   font-weight: 400;
   color: #000000;
 }
-section.workshops div.event div {
+section.workshops div.event div.photo__content {
   display: flex;
   flex-direction: column;
   justify-content: normal;
   align-items: center;
 }
-section.workshops div.event div img {
+section.workshops div.event div.photo__content img {
+  position: relative;
   -o-object-fit: cover;
      object-fit: cover;
   width: 400px;
@@ -429,7 +490,46 @@ section.workshops div.event div img {
   border-radius: 50%;
   margin: 2rem 0rem 2rem 0rem;
 }
-section.workshops div.event div button {
+section.workshops div.event div.photo__content div.circle-4 {
+  position: absolute;
+  content: "";
+  display: block;
+  transform: translate(-50%, -50%);
+  border-radius: 50rem;
+  background-color: #62E3FF;
+  width: 300px;
+  height: 300px;
+  top: 135%;
+  left: 65%;
+  z-index: -1;
+}
+section.workshops div.event div.photo__content div.circle-5 {
+  position: absolute;
+  content: "";
+  display: block;
+  transform: translate(-50%, -50%);
+  border-radius: 50rem;
+  background-color: #49A8BD;
+  width: 270px;
+  height: 270px;
+  top: 205%;
+  left: 35%;
+  z-index: -1;
+}
+section.workshops div.event div.photo__content div.circle-6 {
+  position: absolute;
+  content: "";
+  display: block;
+  transform: translate(-50%, -50%);
+  border-radius: 50rem;
+  background-color: #003C51;
+  width: 200px;
+  height: 200px;
+  top: 235%;
+  left: 80%;
+  z-index: -1;
+}
+section.workshops div.event button {
   display: flex;
   flex-direction: normal;
   justify-content: normal;
@@ -440,7 +540,7 @@ section.workshops div.event div button {
   border-radius: 5rem;
   padding: 0.5rem 0.5rem;
 }
-section.workshops div.event div button a {
+section.workshops div.event button a {
   padding: 0rem 0rem 0rem 0.5rem;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
@@ -448,7 +548,7 @@ section.workshops div.event div button a {
   font-weight: 400;
   color: #003C51;
 }
-section.workshops div.event div button ion-icon {
+section.workshops div.event button ion-icon {
   padding: 0rem 0.5rem;
   font-size: 24px;
   color: #003C51;
