@@ -79,7 +79,7 @@
 
         <!-- Content -->
 
-        <section class="login__register--form">
+        <section class="login__form">
             <div class="container">
                 <form class="form">
                     <ion-icon name="person-outline"></ion-icon>
