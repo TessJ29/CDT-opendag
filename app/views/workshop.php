@@ -62,10 +62,16 @@
                             <a class="active" href="./workshop.php">VOORLICHTINGEN</a>
                         </li>
                     </ul>
-                    <button>
-                        <a href="">Inloggen en Registreren</a>
-                        <ion-icon name="arrow-forward-outline"></ion-icon>
-                    </button>
+                    <ul>
+                        <button>
+                            <a href="/">Registreren</a>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </button>
+                        <button>
+                            <a href="/">Inloggen</a>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </button>
+                    </ul>
                 </div>
             </nav>
         </header>

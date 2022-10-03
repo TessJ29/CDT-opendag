@@ -67,16 +67,32 @@
                             <a href="/workshop">VOORLICHTINGEN</a>
                         </li>
                     </ul>
-                    <button>
-                        <a href="">Inloggen en Registreren</a>
-                        <ion-icon name="arrow-forward-outline"></ion-icon>
-                    </button>
+                    <ul>
+                        <button>
+                            <a href="/register">Registreren</a>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </button>
+                        <button>
+                            <a href="/login">Inloggen</a>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </button>
+                    </ul>
                 </div>
             </nav>
         </header>
 
         <!-- Content -->
-        
+
+        <section class="login__register--form">
+            <div class="container">
+                <div class="form">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <input type="text">
+                    <input type="text">
+                </div>
+            </div>
+        </section>
+
         <!-- Footer -->
 
         <footer>
