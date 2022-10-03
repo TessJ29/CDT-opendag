@@ -362,9 +362,10 @@ section.landing__section div.intro div div.circle-2 {
 }
 
 section.course_section {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: normal;
+  justify-content: center;
   align-items: center;
 }
 section.course_section div.cards {
@@ -373,30 +374,46 @@ section.course_section div.cards {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  text-align: center;
+  align-items: center;
 }
 section.course_section div.cards div.card1, section.course_section div.cards div.card2, section.course_section div.cards div.card3, section.course_section div.cards div.card4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 25%;
-  height: 50%;
   padding: 0rem 1rem;
   list-style-type: none;
 }
-section.course_section div.cards div.card1, section.course_section div.cards div.card2, section.course_section div.cards div.card3, section.course_section div.cards div.card4 {
+section.course_section div.cards div.card1 ion-icon, section.course_section div.cards div.card2 ion-icon, section.course_section div.cards div.card3 ion-icon, section.course_section div.cards div.card4 ion-icon {
+  color: #62E3FF;
+}
+section.course_section div.card1, section.course_section div.card2, section.course_section div.card3, section.course_section div.card4 {
   margin: 0;
 }
-section.course_section div.cards div.card1 div.cardtitle1, section.course_section div.cards div.card2 div.cardtitle1, section.course_section div.cards div.card3 div.cardtitle1, section.course_section div.cards div.card4 div.cardtitle1 {
-  padding-bottom: 1.5rem;
+section.course_section div.card1 div.cardtitle1, section.course_section div.card2 div.cardtitle1, section.course_section div.card3 div.cardtitle1, section.course_section div.card4 div.cardtitle1 {
+  text-decoration: none;
+  font-family: normal;
+  font-size: 36px;
+  font-weight: 400;
+  color: black;
+  text-align: center;
 }
-section.course_section div.cards div.card1 div.cardtitle2, section.course_section div.cards div.card2 div.cardtitle2, section.course_section div.cards div.card3 div.cardtitle2, section.course_section div.cards div.card4 div.cardtitle2 {
+section.course_section div.card1 div.cardtitle2, section.course_section div.card2 div.cardtitle2, section.course_section div.card3 div.cardtitle2, section.course_section div.card4 div.cardtitle2 {
+  text-decoration: none;
+  font-family: normal;
+  font-size: 36px;
+  font-weight: 400;
+  color: black;
   padding-bottom: 0.35rem;
+  text-align: center;
 }
-
-nav {
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
+section.course_section div.card1 div.line, section.course_section div.card2 div.line, section.course_section div.card3 div.line, section.course_section div.card4 div.line {
+  background: red;
+  width: 100%;
+  height: 5%;
 }
-nav button {
+section.course_section div.card1 button, section.course_section div.card2 button, section.course_section div.card3 button, section.course_section div.card4 button {
   display: flex;
   flex-direction: normal;
   justify-content: normal;
@@ -405,7 +422,7 @@ nav button {
   border: none;
   background-color: #ffffff;
 }
-nav button a {
+section.course_section div.card1 button a, section.course_section div.card2 button a, section.course_section div.card3 button a, section.course_section div.card4 button a {
   text-decoration: none;
   font-family: "Oswald", sans-serif;
   font-size: 20px;
@@ -413,14 +430,24 @@ nav button a {
   color: #62E3FF;
   letter-spacing: 2px;
 }
-nav button ion-icon {
+section.course_section div.card1 button ion-icon, section.course_section div.card2 button ion-icon, section.course_section div.card3 button ion-icon, section.course_section div.card4 button ion-icon {
   padding: 0.2rem 0.5rem 0rem 0.5rem;
   font-size: 20px;
   color: #62E3FF;
 }
 
-ion-icon {
-  color: #62E3FF;
+div.information {
+  margin: 2% 10%;
+}
+div.information div.info {
+  border: 1px solid rgb(99, 99, 99);
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: normal;
+}
+div.information div.info div.right-side {
+  border: 2px solid black;
 }
 
 section.workshops {

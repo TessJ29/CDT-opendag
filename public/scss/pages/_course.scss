@@ -1,49 +1,58 @@
 @import'../components/buttons';
 // Banner / image */
 
-div.course-intro {
-    
-}
 
 // Cards
 section.course_section{
-    @include displayPosition($direction: column, $align-i: center);
+    width: 100%;
+    @include displayPosition($direction: column, $j-content: center, $align-i: center);
     div.cards {
         margin: 0%;
         padding: 0%;    
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        text-align: center;
+        @include displayPosition($direction: row, $j-content: center, $align-i: center);
         div.card1, div.card2, div.card3, div.card4 {
+            @include displayPosition($direction: column, $j-content: center, $align-i: center);
             width: 25%;
-            height: 50%;
             padding: 0rem 1rem;
             list-style-type: none;
+            // Icons
+            ion-icon {
+                color: #62E3FF;
+            }
+    }
         }
         div.card1, div.card2, div.card3, div.card4 {
             margin: 0;
             div.cardtitle1 {
-                padding-bottom: 1.5rem;
+                @include TextStyling($family: normal, $size: 36px, $weight: 400, $color: black);
+
+                text-align: center;
             }
             div.cardtitle2 {
+                @include TextStyling($family: normal, $size: 36px, $weight: 400, $color: black);
                 padding-bottom: .35rem;
+                text-align: center;
             }
+            div.line {
+                background: red;
+                width: 100%;
+                height: 5%;
+            }
+            button {
+                @include Btn__Without--border;
+              }
         }
     } 
-}
-nav {
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  button {
-    @include Btn__Without--border;
-  }
-}
-// Icons
-ion-icon {
-    color: #62E3FF;
-}
 
 
+div.information {
+    margin: 2% 10%;
+    div.info {
+        border: 1px solid rgb(99, 99, 99);
+        @include displayPosition($direction: row, $j-content: normal, $align-i: normal);
+        div.right-side {
+            border: 2px solid black;
+        }
+    }
+}
 // .show {display:block;}

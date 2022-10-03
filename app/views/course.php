@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scss/main.css">
-    <link rel="stylesheet" href="styling.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../public/scss/main.css">
 
     <title>MBO Utrecht Opendag</title>
 </head>
@@ -106,46 +107,93 @@
             <div class="card1">
                 <ion-icon name="code-slash-outline" size="large"></ion-icon>
                 <div class="cardtitle1">Software developer</div>
-                <hr>
+                <div class="line"></div>
+                <div class="course-information">
+                    <button onclick="show('data-SD')">
+                        <a>Meer lezen</a>
+                        <ion-icon name="arrow-forward-outline" id="rotated-icon"></ion-icon>
+                    </button>
+                </div>
             </div>
             <div class="card2">
                 <ion-icon name="laptop-outline" size="large"></ion-icon>
                 <div class="cardtitle2">Expert IT systems and devices</div>
-                <hr>
+                <div class="line"></div>
+                <div class="course-information">
+                    <button onclick="show('data-ED')">
+                        <a>Meer lezen</a>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </button>
+                </div>
             </div>
             <div class="card3">
-                <ion-icon name="headset-outline" size="large">
-                    </>
-                </ion-icon>
+                <ion-icon name="headset-outline" size="large"></ion-icon>
                 <div class="cardtitle1">Medewerker ICT support</div>
-                <hr>
+                <div class="line"></div>
+                <div class="course-information">
+                    <button onclick="show('data-MI')">
+                        <a>Meer lezen</a>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </button>
+                </div>
             </div>
             <div class="card4">
                 <ion-icon name="laptop-outline" size="large"></ion-icon>
                 <div class="cardtitle2">Allround medewerker IT systems and devices</div>
-                <hr>
-            </div>
-        </div>
-        </div>
-        <!-- tweede menu bar met dropdown menu -->
-        <nav>
-            <div class="SD-information">
-                <button onclick="myFunction()">
-                    <a>Meer lezen</a>
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                </button>
-                <div id="SD">
-                    SD
+                <div class="line"></div>
+                <div class="course-information">
+                    <button onclick="show('data-AD')">
+                        <a>Meer lezen</a>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </button>
                 </div>
             </div>
-            <button onclick="myFunction()">
-                <a>Meer lezen</a>
-                <ion-icon name="arrow-forward-outline"></ion-icon>
-            </button>
-            <div id="ED">
-                ED
-            </div>
+        </div>
+    </section>
+
+    <div class="information">
+        <div class="info">
+            <data id="data-SD">
+                <ion-icon name="code-slash-outline" size="large"></ion-icon>
+                <div class="right-side">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempora similique blanditiis, nostrum quia asperiores cupiditate repellat explicabo consequatur? Earum doloribus error blanditiis enim vitae at nesciunt unde eius porro.</p>
+                    <p>NIVEAU 4 BOL 3-4 JR</p>
+                </div>
+            </data>
+        </div>
+        <div class="info">
+            <data id="data-ED">
+                <ion-icon name="code-slash-outline" size="large"></ion-icon>
+                <div class="right-side">
+                    <p>ED.</p>
+                    <p>NIVEAU 4 BOL 3-4 JR</p>
+                </div>
+            </data>
+        </div>
+        <div class="info">
+            <data id="data-MI">
+                <ion-icon name="code-slash-outline" size="large"></ion-icon>
+                <div class="right-side">
+                    <p>MI</p>
+                    <p>NIVEAU 4 BOL 3-4 JR</p>
+                </div>
+            </data>
+        </div>
+        <div class="info">
+            <data id="data-AD">
+                <ion-icon name="code-slash-outline" size="large"></ion-icon>
+                <div class="right-side">
+                    <p>AD</p>
+                    <p>NIVEAU 4 BOL 3-4 JR</p>
+                </div>
+            </data>
+        </div>
         </nav>
+
+        <!-- SD -->
+
+
+    </div>
     </section>
 
     <!-- Footer -->
@@ -224,7 +272,26 @@
     <script src="./js/script.js"></script>
 
     <script>
+        // Rotate arrow when clicked on -- Not finished
+        let rotation = 0;
+        function rotateIcon() {
+          rotation += 90; // add 90 degrees, you can change this as you want
+          if (rotation === 90) { 
+            // 360 means rotate back to 0
+            rotation = 0;
+          }
+                document.querySelector("#rotated-icon").style.transform = "rotate(90deg)";
+            }
 
+        // Dropdown
+        let show = id => {
+            let dropElement = document.getElementById(id);
+            if (dropElement.style.display === "none") {
+                dropElement.style.display = "block";
+            } else {
+                dropElement.style.display = "none";
+            }
+        }
     </script>
     <!-- Icon Javascripts -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
