@@ -13,6 +13,7 @@ section.course_section{
         div.card1, div.card2, div.card3, div.card4 {
             @include displayPosition($direction: column, $j-content: center, $align-i: center);
             width: 25%;
+            height: 50%;
             padding: 0rem 1rem;
             list-style-type: none;
             // Icons
@@ -25,7 +26,7 @@ section.course_section{
             margin: 0;
             div.cardtitle1 {
                 @include TextStyling($family: normal, $size: 36px, $weight: 400, $color: black);
-
+                padding-bottom: 3rem;
                 text-align: center;
             }
             div.cardtitle2 {
@@ -34,9 +35,9 @@ section.course_section{
                 text-align: center;
             }
             div.line {
-                background: red;
+                background-color: $AmberGrey;
                 width: 100%;
-                height: 5%;
+                height: 2px;
             }
             button {
                 @include Btn__Without--border;

@@ -20,11 +20,6 @@
                 <ul class="navbar__logo">
                     <li><img src="./img/mbologo.png" alt=""></li>
                 </ul>
-                <div class="navbar__toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
                 <ul class="navbar__contact--links">
                     <li>
                         <ion-icon name="mail-outline"></ion-icon>
@@ -75,7 +70,10 @@
                         <a class="active" href="./course.php">OPLEIDINGEN</a>
                     </li>
                     <li>
-                        <a href="./workshop.php">WORKSHOPS</a>
+                        <a href="./workshop.php">VOORLICHTINGEN</a>
+                    </li>
+                    <li>
+                        <a class="active" href="/contact">CONTACT</a>
                     </li>
                 </ul>
                 <button>
@@ -152,10 +150,12 @@
     </section>
 
     <div class="information">
-        <div class="info">
+        <div class="grid">
             <data id="data-SD">
-                <ion-icon name="code-slash-outline" size="large"></ion-icon>
-                <div class="right-side">
+                <div class="grid-item-1">
+                    <ion-icon name="code-slash-outline" size="large"></ion-icon>
+                </div>
+                <div class="grid-item-2">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempora similique blanditiis, nostrum quia asperiores cupiditate repellat explicabo consequatur? Earum doloribus error blanditiis enim vitae at nesciunt unde eius porro.</p>
                     <p>NIVEAU 4 BOL 3-4 JR</p>
                 </div>
@@ -163,8 +163,10 @@
         </div>
         <div class="info">
             <data id="data-ED">
-                <ion-icon name="code-slash-outline" size="large"></ion-icon>
-                <div class="right-side">
+                <div class="grid-item-1">
+                    <ion-icon name="code-slash-outline" size="large"></ion-icon>
+                </div>
+                <div class="grid-item-2">
                     <p>ED.</p>
                     <p>NIVEAU 4 BOL 3-4 JR</p>
                 </div>
@@ -172,8 +174,10 @@
         </div>
         <div class="info">
             <data id="data-MI">
-                <ion-icon name="code-slash-outline" size="large"></ion-icon>
-                <div class="right-side">
+                <div class="grid-item-1">
+                    <ion-icon name="code-slash-outline" size="large"></ion-icon>
+                </div>
+                <div class="grid-item-2">
                     <p>MI</p>
                     <p>NIVEAU 4 BOL 3-4 JR</p>
                 </div>
@@ -181,8 +185,10 @@
         </div>
         <div class="info">
             <data id="data-AD">
-                <ion-icon name="code-slash-outline" size="large"></ion-icon>
-                <div class="right-side">
+                <div class="grid-item-1">
+                    <ion-icon name="code-slash-outline" size="large"></ion-icon>
+                </div>
+                <div class="grid-item-2">
                     <p>AD</p>
                     <p>NIVEAU 4 BOL 3-4 JR</p>
                 </div>
@@ -273,15 +279,15 @@
 
     <script>
         // Rotate arrow when clicked on -- Not finished
-        let rotation = 0;
-        function rotateIcon() {
-          rotation += 90; // add 90 degrees, you can change this as you want
-          if (rotation === 90) { 
-            // 360 means rotate back to 0
-            rotation = 0;
-          }
-                document.querySelector("#rotated-icon").style.transform = "rotate(90deg)";
-            }
+        // let rotation = 0;
+        // function rotateIcon() {
+        //   rotation += 90; // add 90 degrees, you can change this as you want
+        //   if (rotation === 90) { 
+        //     // 360 means rotate back to 0
+        //     rotation = 0;
+        //   }
+        //         document.querySelector("#rotated-icon").style.transform = "rotate(90deg)";
+        //     }
 
         // Dropdown
         let show = id => {
