@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -112,7 +113,7 @@ header nav div.bottom__navbar ul li a.active {
   font-weight: 700;
   color: #003C51;
 }
-header nav div.bottom__navbar button {
+header nav div.bottom__navbar ul button {
   display: flex;
   flex-direction: normal;
   justify-content: normal;
@@ -123,7 +124,7 @@ header nav div.bottom__navbar button {
   border-radius: 5rem;
   padding: 0.5rem 0.5rem;
 }
-header nav div.bottom__navbar button a {
+header nav div.bottom__navbar ul button a {
   padding: 0rem 0rem 0rem 0.5rem;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
@@ -131,7 +132,7 @@ header nav div.bottom__navbar button a {
   font-weight: 400;
   color: #003C51;
 }
-header nav div.bottom__navbar button ion-icon {
+header nav div.bottom__navbar ul button ion-icon {
   padding: 0rem 0.5rem;
   font-size: 24px;
   color: #003C51;
@@ -552,4 +553,134 @@ section.workshops div.event button ion-icon {
   padding: 0rem 0.5rem;
   font-size: 24px;
   color: #003C51;
+}
+
+section.login__register--form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: normal;
+  height: 50rem;
+}
+section.login__register--form div.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+}
+section.login__register--form div.container form.form {
+  position: relative;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 4rem;
+  border-radius: 15px;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.login__register--form div.container form.form ion-icon {
+  margin: 2rem;
+  font-size: 56px;
+  color: #62E3FF;
+}
+section.login__register--form div.container form.form div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: flex-start;
+}
+section.login__register--form div.container form.form div label {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #003C51;
+}
+section.login__register--form div.container form.form input {
+  margin: 0rem 0rem 1.5rem 0rem;
+  border: none;
+  width: 27rem;
+  height: 4rem;
+  border-radius: 15px;
+  background-color: whitesmoke;
+}
+section.login__register--form div.container form.form div.submit__btn {
+  width: 100%;
+  margin: 3rem 0rem 0rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.login__register--form div.container form.form div.submit__btn button {
+  height: 3.5rem;
+  display: flex;
+  flex-direction: normal;
+  justify-content: normal;
+  align-items: center;
+  margin: 0rem 1rem;
+  background-color: #ffffff;
+  border: solid 4px #62E3FF;
+  border-radius: 5rem;
+  padding: 0.5rem 0.5rem;
+}
+section.login__register--form div.container form.form div.submit__btn button a {
+  padding: 0rem 0rem 0rem 0.5rem;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #003C51;
+}
+section.login__register--form div.container form.form div.submit__btn button ion-icon {
+  padding: 0rem 0.5rem;
+  font-size: 24px;
+  color: #003C51;
+}
+section.login__register--form div.container form.form div.submit__btn button ion-icon {
+  margin: 0rem 0.2rem;
+}
+section.login__register--form div.container div.circle-1 {
+  position: absolute;
+  content: "";
+  display: block;
+  transform: translate(-50%, -50%);
+  border-radius: 50rem;
+  background-color: #62E3FF;
+  width: 300px;
+  height: 300px;
+  top: 70%;
+  left: 67%;
+  z-index: -1;
+}
+section.login__register--form div.container div.circle-2 {
+  position: absolute;
+  content: "";
+  display: block;
+  transform: translate(-50%, -50%);
+  border-radius: 50rem;
+  background-color: #49A8BD;
+  width: 270px;
+  height: 270px;
+  top: 83%;
+  left: 35%;
+  z-index: -1;
+}
+section.login__register--form div.container div.circle-3 {
+  position: absolute;
+  content: "";
+  display: block;
+  transform: translate(-50%, -50%);
+  border-radius: 50rem;
+  background-color: #003C51;
+  width: 200px;
+  height: 200px;
+  top: 85%;
+  left: 65%;
+  z-index: -1;
 }/*# sourceMappingURL=main.css.map */

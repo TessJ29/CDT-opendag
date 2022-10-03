@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MBO Utrecht</title>
         <!-- stylesheet links -->
-        <link rel="stylesheet" href="./scss/main.css">
+        <link rel="stylesheet" href="/public/scss/main.css">
     </head>
     <body>
 
@@ -17,7 +17,7 @@
             <nav>
                 <div class="top__navbar">
                     <ul class="navbar__logo">
-                        <li><img src="./img/mbologo.png" alt=""></li>
+                        <li><img src="/public/img/mbologo.png" alt=""></li>
                     </ul>
                     <div class="navbar__toggle" id="mobile-menu">
                             <span class="bar"></span>
@@ -55,7 +55,7 @@
                 <div class="bottom__navbar">
                     <ul>
                         <li>
-                            <a class="active" href="./index.php">HOME</a>
+                            <a href="/index">HOME</a>
                         </li>
                         <li>
                             <a href="/about">OVER MBO UTRECHT</a>
@@ -72,10 +72,6 @@
                             <a href="/register">Registreren</a>
                             <ion-icon name="arrow-forward-outline"></ion-icon>
                         </button>
-                        <button>
-                            <a href="/login">Inloggen</a>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </button>
                     </ul>
                 </div>
             </nav>
@@ -85,11 +81,26 @@
 
         <section class="login__register--form">
             <div class="container">
-                <div class="form">
+                <form class="form">
                     <ion-icon name="person-outline"></ion-icon>
+                    <div>
+                        <label for="">Email: </label>
+                    </div>
                     <input type="text">
+                    <div>                        
+                        <label for="">Wachtwoord: </label>
+                    </div>
                     <input type="text">
-                </div>
+                    <div class="submit__btn">
+                        <button>
+                            <a href="/">Inloggen</a>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </button>
+                    </div>
+                </form>
+                <div class="circle-1"></div>
+                <div class="circle-2"></div>
+                <div class="circle-3"></div>
             </div>
         </section>
 
