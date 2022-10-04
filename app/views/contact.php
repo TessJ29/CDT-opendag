@@ -91,17 +91,44 @@
     </header>
 
     <!-- Landing image/banner -->
-    <section class="landing__section">
+    <section class="contact_landing">
         <div class="intro">
             <div>
                 <div class="circle-1"></div>
                 <div class="circle-2"></div>
                 <div>
-                    <img src="" alt="">
+                    <img src="../../public/img/contactimage.png" alt="">
                 </div>
             </div>
         </div>
         <!-- <img src="./img/mbologo.png" alt=""> -->
+    </section>
+    <section class="cards_section">
+        <div class="cards">
+            <div class="card-call">
+                <div class="title">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <h2>BEL ONS</h2>
+                </div>
+                <p>06 - 257 050 51 (WhatsApp)</p>
+                <p>030 - 28 15 100</p>
+            </div>
+            <div class="card-location">
+                <div class="title">
+                    <ion-icon name="location-outline"></ion-icon>
+                    <h2>LOCATIE</h2>
+                </div>
+                <p>Daltonlaan 300 3584 BK Utrecht</p>
+            </div>
+            <div class="card-time">
+                <div class="title">
+                    <ion-icon name="time-outline"></ion-icon>
+                    <h2>TIJDEN</h2>
+                </div>
+                <p>Wij zijn bereikbaar op schooldagen tussen</p>
+                <p>8:30 en 17:00</p>
+            </div>
+        </div>
     </section>
 
     <!-- Cantact page section -->
@@ -220,6 +247,10 @@
         </div>
     </footer>
 
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

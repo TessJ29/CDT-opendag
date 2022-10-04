@@ -1,5 +1,60 @@
 @import'../components/buttons';
-@import'../abstracts/mixins';
+
+section.contact_landing {
+    @include displayPosition($direction: row, $j-content: center);
+    height: 65rem;
+    width: 100%;
+    div.intro {
+        @include displayPosition($direction: row,$j-content: space-evenly, $align-i: center);
+
+        div {
+        @include displayPosition($direction: column,$j-content: space-evenly, $align-i: center);
+
+            div.circle-1 {
+
+            }
+            div.circle-2 {
+
+            }
+            div {
+                img {
+
+                }
+            }
+        }
+    }
+}
+
+section.cards_section {
+    div.cards {
+        @include displayPosition($direction: row, $j-content: space-evenly, $align-i: center);
+        div.title {
+            @include displayPosition($direction: row, $j-content: space-evenly, $align-i: center);
+            ion-icon {
+                color: #62E3FF;
+                font-size: 64px;
+                padding-bottom: .5rem;
+            }
+            h2 {
+                @include TextStyling($family: $oswald, $size: 36px, $weight: 400, $color: black);
+                padding-bottom: .5rem;
+            }
+        }
+        div.card-call {
+
+            p {
+                margin-top: 10px;
+            }
+
+        }
+        div.card-location {
+            
+        }
+        div.card-time {
+
+        }
+    }
+}
 
 section.contact_form {
     form {
