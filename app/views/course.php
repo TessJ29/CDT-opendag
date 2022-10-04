@@ -152,42 +152,44 @@
         <div class="info">
             <div id="data-SD" class="dropdown-menu">
                 <div class="content-left">
-                    <ion-icon name="code-slash-outline" size="large"></ion-icon>
+                    <ion-icon name="code-slash-outline"></ion-icon>
                 </div>
                 <div class="content-right">
                     <h3>Software Developer</h3>
                     <p>Tijdens deze drie tot vier-jarige opleiding leer je hoe je zelfstandig apps, games of webapplicaties kunt maken met behulp van frameworks en object georiënteerd programmeren.
-                         Het is een echte programmeeropleiding, geen knippen en plakken maar degelijk codekloppen.
-                         Je werkt projectmatig en gebruikt programmeertalen zoals PHP, C#, Javascript en SQL. Je ontwikkelt je beroepshouding, presentatietechnieken 
-                         en leert samen te werken. Je leert een product ontwikkelen, bouwen, testen, documenteren en opleveren.</p>
+                        Het is een echte programmeeropleiding, geen knippen en plakken maar degelijk codekloppen.
+                        Je werkt projectmatig en gebruikt programmeertalen zoals PHP, C#, Javascript en SQL. Je ontwikkelt je beroepshouding, presentatietechnieken
+                        en leert samen te werken. Je leert een product ontwikkelen, bouwen, testen, documenteren en opleveren.</p>
                     <p>NIVEAU 4 BOL 3-4 JR</p>
                 </div>
             </div>
         </div>
         <div class="info">
             <div id="data-ED" class="dropdown-menu">
-                <div class="content-left">
-                    <ion-icon name="code-slash-outline" size="large"></ion-icon>
-                </div>
-                <div class="content-right">
-                    <h3>Expert IT systems and devices</h3>
-                    <p>Als Expert IT systems and devices ben jij er verantwoordelijk voor dat alle collega’s hun werk op een goede manier kunnen doen. Jij houd je vooral bezig met service, beheer en veiligheid van verschillende netwerken en servers. Jij weet hoe de verschillende apparaten programma’s en besturingssystemen werken (bijvoorbeeld Windows, Linux, Android en macOS). 
-                        Wanneer iemand jou een vraag stelt over zijn pc, Ipad, mobiel, internet, server of programma, kun jij ze verder helpen. Ook weet je (straks) wat cloudcomputing is.
-                        Je probeert problemen te voorkomen. En als er dan toch een probleem is, ga jij meteen op zoek naar een oplossing. Het is ook jouw taak om het bedrijf goed te kennen.
-                        Uiteraard moet je je steeds verdiepen in nieuwe ontwikkelingen op het gebied van ICT. Hoe kun je nieuwe technologieën toepassen? Hoe blijf je hackers een stap voor? Daarnaast geef je ook adviezen over hoe de ICT security kan worden verbeterd. Jij bent de specialist.
-                        Jij leert, ook onder stress, jouw medewerkers op de ICT-afdeling instructies te geven en te motiveren.</p>
-                    <p>NIVEAU 4 BOL 3-4 JR</p>
+                <div class="content">
+                    <div class="content-left">
+                        <ion-icon name="laptop-outline"></ion-icon>
+                    </div>
+                    <div class="content-right">
+                        <h3>Expert IT systems and devices</h3>
+                        <p>Als Expert IT systems and devices ben jij er verantwoordelijk voor dat alle collega’s hun werk op een goede manier kunnen doen. Jij houd je vooral bezig met service, beheer en veiligheid van verschillende netwerken en servers. Jij weet hoe de verschillende apparaten programma’s en besturingssystemen werken (bijvoorbeeld Windows, Linux, Android en macOS).
+                            Wanneer iemand jou een vraag stelt over zijn pc, Ipad, mobiel, internet, server of programma, kun jij ze verder helpen. Ook weet je (straks) wat cloudcomputing is.
+                            Je probeert problemen te voorkomen. En als er dan toch een probleem is, ga jij meteen op zoek naar een oplossing. Het is ook jouw taak om het bedrijf goed te kennen.
+                            Uiteraard moet je je steeds verdiepen in nieuwe ontwikkelingen op het gebied van ICT. Hoe kun je nieuwe technologieën toepassen? Hoe blijf je hackers een stap voor? Daarnaast geef je ook adviezen over hoe de ICT security kan worden verbeterd. Jij bent de specialist.
+                            Jij leert, ook onder stress, jouw medewerkers op de ICT-afdeling instructies te geven en te motiveren.</p>
+                        <p>NIVEAU 4 BOL 3-4 JR</p>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="info">
             <div id="data-MI" class="dropdown-menu">
                 <div class="content-left">
-                    <ion-icon name="code-slash-outline" size="large"></ion-icon>
+                    <ion-icon name="headset-outline"></ion-icon>
                 </div>
                 <div class="content-right">
                     <h3>Medewerker ICT support</h3>
-                    <p>Tijdens de opleiding leer je van alles wat met ICT en Elektro te maken heeft: elektro-installatietechniek, datanetwerken, domotica, software, en hoe een computer in elkaar zit. 
+                    <p>Tijdens de opleiding leer je van alles wat met ICT en Elektro te maken heeft: elektro-installatietechniek, datanetwerken, domotica, software, en hoe een computer in elkaar zit.
                         Ook ontwikkel je tijdens je studie vaardigheden om andere computergebruikers te kunnen helpen. We besteden aandacht aan de nieuwste technologieën op het gebied van elektro en ICT.
                         Als je een techneut bent en graag met je handen werkt, kun je als medewerker ICT alle kanten uit. Waar je ook voor kiest: jij zorgt ervoor dat ICT-voorzieningen goed blijven werken en helpt gebruikers als ze er problemen mee hebben.</p>
                     <p>NIVEAU 2 BOL 1 JR</p>
@@ -197,14 +199,14 @@
         <div class="info">
             <div id="data-AD" class="dropdown-menu">
                 <div class="content-left">
-                    <ion-icon name="code-slash-outline" size="large"></ion-icon>
+                    <ion-icon name="laptop-outline"></ion-icon>
                 </div>
                 <div class="content-right">
                     <h3>Allround medewerker IT systems and devices</h3>
-                    <p>Als Allround medewerker IT systems and devices zorg jij ervoor dat je collega werknemers in een bedrijf hun werk kunnen doen. Zonder laptop, internet, e-mail, telefoon en werkende programma’s kan niemand werken. Jij zorgt ervoor dat het netwerk snel en betrouwbaar is. 
+                    <p>Als Allround medewerker IT systems and devices zorg jij ervoor dat je collega werknemers in een bedrijf hun werk kunnen doen. Zonder laptop, internet, e-mail, telefoon en werkende programma’s kan niemand werken. Jij zorgt ervoor dat het netwerk snel en betrouwbaar is.
                         Gelukkig hoef je dat niet in je eentje te doen. Je werkt soms alleen, maar vaak ook in een team.
-                        Je werkt vooral aan het helpen van gebruikers en het installeren en configureren van allerlei programma’s en apparaten. 
-                        Het maakt voor jou niet veel uit of iemand een vraag heeft over zijn laptop, tablet, telefoon, internet of een ingewikkeld programma.  Iedere vraag is voor jou een leuke uitdaging. Ook geef je gebruikers uitleg en instructies, zodat zij goed met hun hardware en programma’s kunnen werken.</p>
+                        Je werkt vooral aan het helpen van gebruikers en het installeren en configureren van allerlei programma’s en apparaten.
+                        Het maakt voor jou niet veel uit of iemand een vraag heeft over zijn laptop, tablet, telefoon, internet of een ingewikkeld programma. Iedere vraag is voor jou een leuke uitdaging. Ook geef je gebruikers uitleg en instructies, zodat zij goed met hun hardware en programma’s kunnen werken.</p>
                     <p>NIVEAU 3 BOL 2 JR</p>
                 </div>
             </div>
