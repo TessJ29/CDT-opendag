@@ -64,11 +64,11 @@
                     </ul>
                     <ul>
                         <button>
-                            <a href="/">Registreren</a>
+                            <a href="/register">Registreren</a>
                             <ion-icon name="arrow-forward-outline"></ion-icon>
                         </button>
                         <button>
-                            <a href="/">Inloggen</a>
+                            <a href="/login">Inloggen</a>
                             <ion-icon name="arrow-forward-outline"></ion-icon>
                         </button>
                     </ul>
