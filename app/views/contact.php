@@ -133,41 +133,46 @@
 
     <!-- Cantact page section -->
     <section class="contact_form">
-        <form action="" method="post">
+        <form action="<?= URLROOT ?>/contact" method="post">
             <table>
                 <tr>
                     <th>
-                        <label for="inputFirstName">Voornaam</label>
+                        <label for="FirstName">Voornaam</label>
                     </th>
                     <th>
-                        <label for="inputLastName">Achternaam</label>
+                        <label for="LastName">Achternaam</label>
                     </th>
                 </tr>
                 <td>
-                    <input type="text" name="FirstName" id="inputFirstName">
+                    <input type="text" name="FirstName" id="FirstName">
                 </td>
                 <td>
-                    <input type="text" name="LastName" id="inputLastName">
+                    <input type="text" name="LastName" id="LastName">
                 </td>
                 <tr>
                     <th>
-                        <label for="inputEmail">E-mail</label>
+                        <label for="Email">E-mail</label>
                     </th>
                     <th>
-                        <label for="inputTel">Telefoon nummer</label>
+                        <label for="PhoneNumber">Telefoon nummer</label>
                     </th>
                 </tr>
                 <tr>
                     <td>
-                        <input type="email" name="Email" id="inputEmail">
+                        <input type="email" name="Email" id="Email">
                     </td>
                     <td>
-                        <input type="tel" name="" id="inputTel">
+                        <input type="tel" name="" id="PhoneNumber">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="text" name="Message" id="inputMessage">
+                        <input type="text" name="Message" id="Message">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="submit">
                     </td>
                 </tr>
             </table>
