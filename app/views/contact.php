@@ -134,55 +134,38 @@
 
     <!-- Cantact page section -->
     <section class="contact_form">
-        <form action="<?= URLROOT ?>/contact/create" method="post">
-            <table>
-                <tr>
-                    <th>
+        <div class="form">
+            <h1>Contact Formulier</h1>
+            <form action="<?= URLROOT ?>/contact/create" method="post">
+                <div class="inputSection">
+                    <div>
                         <label for="FirstName">Voornaam</label>
-                    </th>
-                    <th>
+                        <input type="text" name="FirstName" id="FirstName" placeholder="John" required="required">
+                    </div>
+                    <div>
                         <label for="LastName">Achternaam</label>
-                    </th>
-                </tr>
-                <td>
-                    <input type="text" name="FirstName" id="FirstName" placeholder="John">
-                </td>
-                <td>
-                    <input type="text" name="LastName" id="LastName" placeholder="Doe">
-                </td>
-                <tr>
-                    <th>
+                        <input type="text" name="LastName" id="LastName" placeholder="Doe" required="required">
+                    </div>
+                </div>
+                <div class="inputSection">
+                    <div>
                         <label for="Email">E-mail</label>
-                    </th>
-                    <th>
+                        <input type="email" name="Email" id="Email" placeholder="JohnDoe@example.com" required="required">
+                    </div>
+                    <div>
                         <label for="PhoneNumber">Telefoon nummer</label>
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="email" name="Email" id="Email" placeholder="JohnDoe@example.com">
-                    </td>
-                    <td>
                         <input type="tel" name="PhoneNumber" id="PhoneNumber" placeholder="12345678">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" name="Message" id="Message" placeholder="Uw bericht">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="hidden" name="Id" id="Id">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="submit" value="submit">
-                    </td>
-                </tr>
-            </table>
-        </form>
+                    </div>
+                </div>
+                <div class="message">
+                    <textarea type="text" name="Message" id="Message" placeholder="Voer hier uw bericht in" required="required"></textarea>
+                </div>
+                <input type="hidden" name="Id" id="Id">
+                <div class="submit">
+                    <input type="submit" value="Verzenden">
+                </div>
+            </form>
+        </div>
     </section>
 
     <!-- Footer -->

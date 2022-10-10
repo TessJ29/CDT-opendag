@@ -1,6 +1,5 @@
 @import'../components/buttons';
 
-
 section.contact_landing {
     @include displayPosition($direction: row, $j-content: center);
     height: 65rem;
@@ -36,8 +35,7 @@ section.contact_landing {
                 border-radius: 50rem;
                 object-fit: cover;
             }
-        }
-            
+        }  
     }
 }
 
@@ -64,11 +62,63 @@ section.cards_section {
             }
 
         }
-        div.card-location {
-            
-        }
-        div.card-time {
+    }
+}
 
+section.contact_form {
+    @include displayPosition($direction: column, $j-content: center, $align-i: center);
+    div.form {  
+        width: 50%;
+        padding: 2rem;
+        margin: 5rem 0rem;
+        background-color: white;
+        box-shadow: 0 0 10px black;  
+            h1 {
+                @include displayPosition($j-content: center, $align-i: normal);
+                @include TextStyling($family: $oswald, $size: 32px, $weight: 400, $color: black); 
+            }
+        div.inputSection {
+            @include displayPosition($direction: row, $j-content: center, $align-i: normal);
+            div {
+            width: 23.3rem;
+                @include displayPosition($direction: column, $j-content: center, $align-i: normal);
+                margin: 0rem .5rem;
+                padding: 1rem 0rem;
+            }
         }
+        div.message {
+            @include displayPosition($direction: row, $j-content: center, $align-i: center);
+            padding: 1rem 0rem;
+            height: 50%;
+                textarea {
+                    width: 86%;
+                    max-width: 86%;
+                    min-height: 20vh;
+                    padding: .5rem;
+                    color: black;
+                    background-color: $Silver;
+                    border: none;
+                }
+            }
+        div.submit {
+            @include displayPosition($direction: row, $j-content: center, $align-i: center);
+            margin: .5rem 0rem;
+            input {
+                border: none;
+                background-color: $Silver;
+                width: 86%;
+                padding: .5rem;
+            }
+            :hover {
+                background-color: $LightGrey;
+            }
+        }
+        input {
+            @include TextStyling($family: $oswald, $size: 16px, $weight: 400, $color: black); 
+            border: none;
+            background-color: $Silver;
+            color: black;
+            padding: .5rem;
+        }  
     }
 }
