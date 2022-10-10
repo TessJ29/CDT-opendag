@@ -76,11 +76,12 @@
                         <a href="/course">OPLEIDINGEN</a>
                     </li>
                     <li>
-                        <a href="/workshop">VOORLICHTINGEN</a>
-                    </li>
-                    <li>
                         <a class="active" href="/contact">CONTACT</a>
                     </li>
+                    <li>
+                        <a href="/workshop">VOORLICHTINGEN</a>
+                    </li>
+
                 </ul>
                 <button>
                     <a href="">Enquette</a>
@@ -133,7 +134,7 @@
 
     <!-- Cantact page section -->
     <section class="contact_form">
-        <form action="<?= URLROOT ?>/contact" method="post">
+        <form action="<?= URLROOT ?>/contact/create" method="post">
             <table>
                 <tr>
                     <th>
@@ -144,10 +145,10 @@
                     </th>
                 </tr>
                 <td>
-                    <input type="text" name="FirstName" id="FirstName">
+                    <input type="text" name="FirstName" id="FirstName" placeholder="John">
                 </td>
                 <td>
-                    <input type="text" name="LastName" id="LastName">
+                    <input type="text" name="LastName" id="LastName" placeholder="Doe">
                 </td>
                 <tr>
                     <th>
@@ -159,15 +160,20 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="email" name="Email" id="Email">
+                        <input type="email" name="Email" id="Email" placeholder="JohnDoe@example.com">
                     </td>
                     <td>
-                        <input type="tel" name="" id="PhoneNumber">
+                        <input type="tel" name="PhoneNumber" id="PhoneNumber" placeholder="12345678">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="text" name="Message" id="Message">
+                        <input type="text" name="Message" id="Message" placeholder="Uw bericht">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="hidden" name="Id" id="Id">
                     </td>
                 </tr>
                 <tr>

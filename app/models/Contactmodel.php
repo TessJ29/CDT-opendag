@@ -1,6 +1,6 @@
 <?php
 
-class Contactmodel
+class ContactModel
 {
     private Database $db;
 
@@ -9,16 +9,21 @@ class Contactmodel
         $this->db = new Database();
     }
 
-    public function createContactFormRow ()
+    public function createContactFormRow($post)
     {
-        $this->db->query('INSERT INTO `contactform` (`FirstName`, `LastName`, `Email`, `PhoneNumber`, `Message`) VALUES (:FirstName, :LastName, :Email, :PhoneNumber, :Message)');
-        $this->db->bind(':FirstName', $_POST['FirstName']);
-        $this->db->bind(':LastName', $_POST['LastName']);
-        $this->db->bind(':Email', $_POST['Email']);
-        $this->db->bind(':PhoneNumber', $_POST['PhoneNumber']);
-        $this->db->bind(':Message', $_POST['Message']);
-        $this->db->execute();
+        // var_dump($post);
+        // exit();
+        $this->db->query('INSERT INTO `contactform` (Id, FirstName, LastName, Email, PhoneNumber, Message) 
+                            VALUES (:id, :firstname, :lastname, :email, :phonenumber, :message)');
 
-        header('Location: ../views/contact');
+        $this->db->bind(':id', $post["Id"], PDO::PARAM_INT);
+        $this->db->bind(':firstname', $post['FirstName'], PDO::PARAM_STR);
+        $this->db->bind(':lastname', $post['LastName'], PDO::PARAM_STR);
+        $this->db->bind(':email', $post['Email'], PDO::PARAM_STR);
+        $this->db->bind(':phonenumber', $post['PhoneNumber'], PDO::PARAM_STR);
+        $this->db->bind(':message', $post['Message'], PDO::PARAM_STR);
+        return $this->db->execute();
+
+        // header('Location: ../views/contact');
     }
 }

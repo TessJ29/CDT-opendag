@@ -1,33 +1,50 @@
 @import'../components/buttons';
 
+
 section.contact_landing {
     @include displayPosition($direction: row, $j-content: center);
     height: 65rem;
     width: 100%;
-    div.intro {
+    @media screen and (max-width: 1600px) {
+        height: 80rem;
+    }
+    div.intro{
         @include displayPosition($direction: row,$j-content: space-evenly, $align-i: center);
-
+        width: 70%;
+            @media screen and (max-width: 1600px) {
+                @include displayPosition($direction: column, $j-content: space-evenly, $align-i: center);
+            }  
         div {
-        @include displayPosition($direction: column,$j-content: space-evenly, $align-i: center);
-
-            div.circle-1 {
-
-            }
-            div.circle-2 {
-
-            }
-            div {
-                img {
-
+            div.circle-1{
+                @include CircleStyling($color: $DarkBlue, $size: 360px, $top: 60%, $left: 60%);
+                @media screen and (max-width: 1600px) {
+                    @include CircleStyling($color: $DarkBlue, $size: 360px, $top: 90%, $left: 40%);
                 }
             }
+            div.circle-2{
+                @include CircleStyling($color: $LightBlue, $size: 480px, $top: 84%, $left: 34%);
+                @media screen and (max-width: 1600px) {
+                    @include CircleStyling($color: $LightBlue, $size: 480px, $top: 120%, $left: 65%);
+                }
+            }
+        } 
+        div {
+            img{
+                position: relative;
+                width: 620px;
+                height: 620px;
+                border-radius: 50rem;
+                object-fit: cover;
+            }
         }
+            
     }
 }
 
+    
 section.cards_section {
     div.cards {
-        @include displayPosition($direction: row, $j-content: space-evenly, $align-i: center);
+        @include displayPosition($direction: row, $j-content: space-evenly, $align-i: baseline);
         div.title {
             @include displayPosition($direction: row, $j-content: space-evenly, $align-i: center);
             ion-icon {
@@ -52,22 +69,6 @@ section.cards_section {
         }
         div.card-time {
 
-        }
-    }
-}
-
-section.contact_form {
-    form {
-        table {
-            tr {
-
-                th {
-
-                }
-                td {
-
-                }
-            }
         }
     }
 }
