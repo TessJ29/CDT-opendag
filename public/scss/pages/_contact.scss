@@ -17,13 +17,13 @@ section.contact_landing {
             div.circle-1{
                 @include CircleStyling($color: $DarkBlue, $size: 360px, $top: 60%, $left: 60%);
                 @media screen and (max-width: 1600px) {
-                    @include CircleStyling($color: $DarkBlue, $size: 360px, $top: 90%, $left: 40%);
+                    @include CircleStyling($color: $DarkBlue, $size: 360px, $top: 60%, $left: 40%);
                 }
             }
             div.circle-2{
                 @include CircleStyling($color: $LightBlue, $size: 480px, $top: 84%, $left: 34%);
                 @media screen and (max-width: 1600px) {
-                    @include CircleStyling($color: $LightBlue, $size: 480px, $top: 120%, $left: 65%);
+                    @include CircleStyling($color: $LightBlue, $size: 480px, $top: 110%, $left: 35%);
                 }
             }
         } 
@@ -67,12 +67,13 @@ section.cards_section {
 
 section.contact_form {
     @include displayPosition($direction: column, $j-content: center, $align-i: center);
+    z-index: 1;
     div.form {  
         width: 50%;
         padding: 2rem;
         margin: 5rem 0rem;
-        background-color: white;
-        box-shadow: 0 0 10px black;  
+        background-color: rgba(255, 255, 255, 0.788);
+        border-radius: 10px;
             h1 {
                 @include displayPosition($j-content: center, $align-i: normal);
                 @include TextStyling($family: $oswald, $size: 32px, $weight: 400, $color: black); 
@@ -113,6 +114,9 @@ section.contact_form {
                 background-color: $LightGrey;
             }
         }
+        label {
+            @include TextStyling($family: $oswald, $size: 16px, $weight: 400, $color: black)
+        }
         input {
             @include TextStyling($family: $oswald, $size: 16px, $weight: 400, $color: black); 
             border: none;
@@ -121,4 +125,49 @@ section.contact_form {
             padding: .5rem;
         }  
     }
+    div.background_contactform {
+        position: absolute;
+        top: 10%;
+        left: 30%;
+        z-index: -1;
+        div.circles {
+            div.circle-1 {
+                @include CircleStyling($color: #84c3c39f, $size: 360px, $top: 95rem, $left: 55rem);
+                stroke: #2b59608a;
+                box-shadow: inset 0px 4px 67px 0px #00000046;
+            }   
+            div.circle-2 {
+                @include CircleStyling($color: #DAF7FD, $size: 360px, $top: 105rem, $left: 37rem);
+                stroke: #62e2ff86;
+                box-shadow: inset 0px 4px 67px 0px #00000046;
+                z-index: -2;
+            }
+            div.circle-3 {
+                @include CircleStyling($color: #daf7fdb9, $size: 231px, $top: 87rem, $left: 25rem);
+                stroke: #9fe4f354;
+                box-shadow: inset 0px 4px 67px 0px #00000046;
+            }
+            div.circle-4 {
+                @include CircleStyling($color: #62e2ff5e, $size: 140px, $top: 85rem, $left: 10rem);
+                stroke: #4ca4a456;
+                box-shadow: inset 0px 4px 67px 0px #00000046;
+            }
+            div.circle-5 {
+                @include CircleStyling($color: #a3edfeab, $size: 373px, $top: 110rem, $left: 8rem);
+                stroke: #62E3FF;
+                box-shadow: inset 0px 4px 67px 0px #00000046;
+            }
+            div.circle-6 {
+                @include CircleStyling($color: #9fe4f362, $size: 380px, $top: 95.5rem, $left: -1rem);
+                stroke: #DAF7FD;
+                box-shadow: inset 0px 4px 67px 0px #00000046;
+            }
+            div.circle-7 {
+                @include CircleStyling($color: #9be4f444, $size: 129px, $top: 110rem, $left: -13rem);
+                stroke: #62e2ff77;
+                box-shadow: inset 0px 4px 67px 0px #00000046;
+            }
+        }
+    }
 }
+
