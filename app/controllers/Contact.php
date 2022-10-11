@@ -23,9 +23,10 @@ class Contact extends Controller
 
                 header("Location:" . URLROOT . "/contact");
             } catch (PDOException $e) {
-                echo "Het Versturen van het formulier is niet gelukt";
+                echo "<style>div {display: flex; justify-content: center; align-items: center;}</style><div><h1>Het Versturen van het formulier is niet gelukt. Check of de ingevulde gegevens kloppen</h1></div>";
                 header("Refresh:3; url=" . URLROOT . "/contact");
             }
         }
     }
 }
+
