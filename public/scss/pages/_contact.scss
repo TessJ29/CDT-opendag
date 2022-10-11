@@ -2,10 +2,10 @@
 
 section.contact_landing {
     @include displayPosition($direction: row, $j-content: center);
-    height: 65rem;
+    height: 40rem;
     width: 100%;
     @media screen and (max-width: 1600px) {
-        height: 80rem;
+        height: 45rem;
     }
     div.intro{
         @include displayPosition($direction: row,$j-content: space-evenly, $align-i: center);
@@ -15,25 +15,28 @@ section.contact_landing {
             }  
         div {
             div.circle-1{
-                @include CircleStyling($color: $DarkBlue, $size: 360px, $top: 60%, $left: 60%);
+                @include CircleStyling($color: $DarkBlue, $size: 260px, $top: 35%, $left: 60%);
                 @media screen and (max-width: 1600px) {
-                    @include CircleStyling($color: $DarkBlue, $size: 360px, $top: 60%, $left: 40%);
+                    @include CircleStyling($color: $DarkBlue, $size: 260px, $top: 40%, $left: 60%);
                 }
             }
             div.circle-2{
-                @include CircleStyling($color: $LightBlue, $size: 480px, $top: 84%, $left: 34%);
+                @include CircleStyling($color: $LightBlue, $size: 380px, $top: 60%, $left: 34%);
                 @media screen and (max-width: 1600px) {
-                    @include CircleStyling($color: $LightBlue, $size: 480px, $top: 110%, $left: 35%);
+                    @include CircleStyling($color: $LightBlue, $size: 380, $top: 70%, $left: 34%);
                 }
             }
         } 
         div {
             img{
                 position: relative;
-                width: 620px;
-                height: 620px;
+                width: 520px;
+                height: 520px;
                 border-radius: 50rem;
                 object-fit: cover;
+                @media screen and (max-width: 1600px) {
+                    @include CircleStyling($color: $LightBlue, $size: 520px, $top: 60%, $left: 50%);
+                }
             }
         }  
     }
@@ -132,38 +135,38 @@ section.contact_form {
         z-index: -1;
         div.circles {
             div.circle-1 {
-                @include CircleStyling($color: #84c3c39f, $size: 360px, $top: 95rem, $left: 55rem);
+                @include CircleStyling($color: #84c3c39f, $size: 360px, $top: 70rem, $left: 55rem);
                 stroke: #2b59608a;
                 box-shadow: inset 0px 4px 67px 0px #00000046;
             }   
             div.circle-2 {
-                @include CircleStyling($color: #DAF7FD, $size: 360px, $top: 105rem, $left: 37rem);
+                @include CircleStyling($color: #DAF7FD, $size: 360px, $top: 80rem, $left: 37rem);
                 stroke: #62e2ff86;
                 box-shadow: inset 0px 4px 67px 0px #00000046;
                 z-index: -2;
             }
             div.circle-3 {
-                @include CircleStyling($color: #daf7fdb9, $size: 231px, $top: 87rem, $left: 25rem);
+                @include CircleStyling($color: #daf7fdb9, $size: 231px, $top: 62rem, $left: 25rem);
                 stroke: #9fe4f354;
                 box-shadow: inset 0px 4px 67px 0px #00000046;
             }
             div.circle-4 {
-                @include CircleStyling($color: #62e2ff5e, $size: 140px, $top: 85rem, $left: 10rem);
+                @include CircleStyling($color: #62e2ff5e, $size: 140px, $top: 60rem, $left: 10rem);
                 stroke: #4ca4a456;
                 box-shadow: inset 0px 4px 67px 0px #00000046;
             }
             div.circle-5 {
-                @include CircleStyling($color: #a3edfeab, $size: 373px, $top: 110rem, $left: 8rem);
+                @include CircleStyling($color: #a3edfeab, $size: 373px, $top: 85rem, $left: 8rem);
                 stroke: #62E3FF;
                 box-shadow: inset 0px 4px 67px 0px #00000046;
             }
             div.circle-6 {
-                @include CircleStyling($color: #9fe4f362, $size: 380px, $top: 95.5rem, $left: -1rem);
+                @include CircleStyling($color: #9fe4f362, $size: 380px, $top: 70.5rem, $left: -1rem);
                 stroke: #DAF7FD;
                 box-shadow: inset 0px 4px 67px 0px #00000046;
             }
             div.circle-7 {
-                @include CircleStyling($color: #9be4f444, $size: 129px, $top: 110rem, $left: -13rem);
+                @include CircleStyling($color: #9be4f444, $size: 129px, $top: 85rem, $left: -13rem);
                 stroke: #62e2ff77;
                 box-shadow: inset 0px 4px 67px 0px #00000046;
             }
