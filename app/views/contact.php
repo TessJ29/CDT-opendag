@@ -154,7 +154,7 @@
                     </div>
                     <div>
                         <label for="PhoneNumber">Telefoon nummer</label>
-                        <input type="tel" name="PhoneNumber" id="PhoneNumber" placeholder="12345678">
+                        <input type="tel" name="PhoneNumber" id="PhoneNumber" placeholder="0612345678">
                     </div>
                 </div>
                 <div class="message">
@@ -166,7 +166,19 @@
                 </div>
             </form>
         </div>
+        <div class="background_contactform">
+        <div class="circles">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+            <div class="circle-4"></div>
+            <div class="circle-5"></div>
+            <div class="circle-6"></div>
+            <div class="circle-7"></div>
+        </div>
+    </div>
     </section>
+
 
     <!-- Footer -->
     <footer>
