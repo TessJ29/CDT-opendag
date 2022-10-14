@@ -14,14 +14,12 @@
             foreach($records as $value)
             {
                 $rows .= "<tr>
-                      <td>$value->id</td>
-                      <td>$value->firstname</td>
-                      <td>$value->lastname</td>
-                      <td>$value->email</td>
-                      <td>$value->password</td>
-                      <td>$value->userrole</td>
-                      <td><a href='" . URLROOT . "/admin/update/$value->id'>update</a></td>
-                      <td><a href='" . URLROOT . "/admin/delete/$value->id'>delete</a></td>
+                      <td>$value->usersId</td>
+                      <td>$value->usersName</td>
+                      <td>$value->usersEmail</td>
+                      <td>$value->usersUid</td>
+                      <td><a href='" . URLROOT . "/admin/update/$value->usersId'>update</a></td>
+                      <td><a href='" . URLROOT . "/admin/delete/$value->usersId'>delete</a></td>
                     </tr>";
             }
 
