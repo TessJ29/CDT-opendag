@@ -1,4 +1,6 @@
-
+<?php 
+   require_once APPROOT . '../helpers/session_helper.php';
+?>
 
 <!doctype html>
 <html lang="en">
@@ -11,18 +13,22 @@
   <body>
 
     <h1>Login</h1>
+    
 
     <div class="container mt-5">
     <div class="row">
         <div class="col-12 col-sm-6">
  <form action= "<?= URLROOT?>/Login/login" method="POST">
+      <?php flash('login') ?>
+     <input type="hidden" name="type" value= "login">
      <div class="form-group">
-     <label for="inputEmail1" class="form-label">Vul hier uw e-mailadres in: </label>
-     <input name="email" type="email" class="form-control" id="email" aria-describedby="email" autofocus>
+     <label for="name/email" class="form-label">Vul hier uw e-mailadres of gebruikernaam in: </label>
+     <input name="name/email" type="texy" class="form-control" placeholder="Username/Email...">
+     
      </div>
      <div class="form-group">
-     <label for="inputPassword" class="form-label">Vul hier wachtwoord in: </label>
-     <input name="password" type="password" class="form-control" id="password" aria-describedby="password"  autofocus>
+     <label for="password" class="form-label">Vul hier wachtwoord in: </label>
+     <input name="usersPwd" type="password" class="form-control" placeholder="Password...">
      </div>
      <br>
      <button type="submit" class="btn btn-danger d-grid gap-2 col-6 mx-auto">Log in</button>
