@@ -31,21 +31,21 @@
 
         public function bind($param, $value, $type = null)
         { 
-            // switch(is_null($value))
-            // {
-            //     case is_int($value):
-            //         $type = PDO::PARAM_INT;
-            //         break;
-            //     case is_bool($value):
-            //         $type = PDO::PARAM_BOOL;
-            //         break;
-            //     case is_null($value):
-            //         $type = PDO::PARAM_NULL;
-            //         break;
-            //     default:                    
-            //         $type = PDO::PARAM_STR;
-            //         break;
-            // } 
+            if(is_null($type))
+            {
+                if(is_int($value))
+                {
+                    $type = PDO::PARAM_INT;
+                }
+                    else if(is_bool($value))
+                {
+                    $type = PDO::PARAM_BOOL;
+                }
+                    else
+                {
+                    $type = PDO::PARAM_STR;
+                }
+            }
             $this->statement->bindValue($param, $value, $type);
         }
 
