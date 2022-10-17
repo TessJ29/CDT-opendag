@@ -20,11 +20,6 @@
                 <ul class="navbar__logo">
                     <li><img src="./img/mbologo.png" alt=""></li>
                 </ul>
-                <div class="navbar__toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
                 <ul class="navbar__contact--links">
                     <li>
                         <ion-icon name="mail-outline"></ion-icon>
@@ -75,7 +70,10 @@
                         <a class="active" href="./course.php">OPLEIDINGEN</a>
                     </li>
                     <li>
-                        <a href="./workshop.php">WORKSHOPS</a>
+                        <a href="./workshop.php">VOORLICHTINGEN</a>
+                    </li>
+                    <li>
+                        <a class="active" href="/contact">CONTACT</a>
                     </li>
                 </ul>
                 <button>
@@ -109,7 +107,7 @@
                 <div class="cardtitle1">Software developer</div>
                 <div class="line"></div>
                 <div class="course-information">
-                    <button onclick="show('data-SD')">
+                    <button data-toggle="dropdown" data-target="#data-SD">
                         <a>Meer lezen</a>
                         <ion-icon name="arrow-forward-outline" id="rotated-icon"></ion-icon>
                     </button>
@@ -120,7 +118,7 @@
                 <div class="cardtitle2">Expert IT systems and devices</div>
                 <div class="line"></div>
                 <div class="course-information">
-                    <button onclick="show('data-ED')">
+                    <button data-toggle="dropdown" data-target="#data-ED">
                         <a>Meer lezen</a>
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </button>
@@ -131,7 +129,7 @@
                 <div class="cardtitle1">Medewerker ICT support</div>
                 <div class="line"></div>
                 <div class="course-information">
-                    <button onclick="show('data-MI')">
+                    <button data-toggle="dropdown" data-target="#data-MI">
                         <a>Meer lezen</a>
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </button>
@@ -142,7 +140,7 @@
                 <div class="cardtitle2">Allround medewerker IT systems and devices</div>
                 <div class="line"></div>
                 <div class="course-information">
-                    <button onclick="show('data-AD')">
+                    <button data-toggle="dropdown" data-target="#data-AD">
                         <a>Meer lezen</a>
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </button>
@@ -150,50 +148,69 @@
             </div>
         </div>
     </section>
-
-    <div class="information">
+    <section class="course_information">
         <div class="info">
-            <data id="data-SD">
-                <ion-icon name="code-slash-outline" size="large"></ion-icon>
-                <div class="right-side">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tempora similique blanditiis, nostrum quia asperiores cupiditate repellat explicabo consequatur? Earum doloribus error blanditiis enim vitae at nesciunt unde eius porro.</p>
+            <div id="data-SD" class="dropdown-menu">
+                <div class="content-left">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                </div>
+                <div class="content-right">
+                    <h3>Software Developer</h3>
+                    <p>Tijdens deze drie tot vier-jarige opleiding leer je hoe je zelfstandig apps, games of webapplicaties kunt maken met behulp van frameworks en object georiënteerd programmeren.
+                        Het is een echte programmeeropleiding, geen knippen en plakken maar degelijk codekloppen.
+                        Je werkt projectmatig en gebruikt programmeertalen zoals PHP, C#, Javascript en SQL. Je ontwikkelt je beroepshouding, presentatietechnieken
+                        en leert samen te werken. Je leert een product ontwikkelen, bouwen, testen, documenteren en opleveren.</p>
                     <p>NIVEAU 4 BOL 3-4 JR</p>
                 </div>
-            </data>
+            </div>
         </div>
         <div class="info">
-            <data id="data-ED">
-                <ion-icon name="code-slash-outline" size="large"></ion-icon>
-                <div class="right-side">
-                    <p>ED.</p>
-                    <p>NIVEAU 4 BOL 3-4 JR</p>
+            <div id="data-ED" class="dropdown-menu">
+                <div class="content">
+                    <div class="content-left">
+                        <ion-icon name="laptop-outline"></ion-icon>
+                    </div>
+                    <div class="content-right">
+                        <h3>Expert IT systems and devices</h3>
+                        <p>Als Expert IT systems and devices ben jij er verantwoordelijk voor dat alle collega’s hun werk op een goede manier kunnen doen. Jij houd je vooral bezig met service, beheer en veiligheid van verschillende netwerken en servers. Jij weet hoe de verschillende apparaten programma’s en besturingssystemen werken (bijvoorbeeld Windows, Linux, Android en macOS).
+                            Wanneer iemand jou een vraag stelt over zijn pc, Ipad, mobiel, internet, server of programma, kun jij ze verder helpen. Ook weet je (straks) wat cloudcomputing is.
+                            Je probeert problemen te voorkomen. En als er dan toch een probleem is, ga jij meteen op zoek naar een oplossing. Het is ook jouw taak om het bedrijf goed te kennen.
+                            Uiteraard moet je je steeds verdiepen in nieuwe ontwikkelingen op het gebied van ICT. Hoe kun je nieuwe technologieën toepassen? Hoe blijf je hackers een stap voor? Daarnaast geef je ook adviezen over hoe de ICT security kan worden verbeterd. Jij bent de specialist.
+                            Jij leert, ook onder stress, jouw medewerkers op de ICT-afdeling instructies te geven en te motiveren.</p>
+                        <p>NIVEAU 4 BOL 3-4 JR</p>
+                    </div>
                 </div>
-            </data>
+            </div>
         </div>
         <div class="info">
-            <data id="data-MI">
-                <ion-icon name="code-slash-outline" size="large"></ion-icon>
-                <div class="right-side">
-                    <p>MI</p>
-                    <p>NIVEAU 4 BOL 3-4 JR</p>
+            <div id="data-MI" class="dropdown-menu">
+                <div class="content-left">
+                    <ion-icon name="headset-outline"></ion-icon>
                 </div>
-            </data>
+                <div class="content-right">
+                    <h3>Medewerker ICT support</h3>
+                    <p>Tijdens de opleiding leer je van alles wat met ICT en Elektro te maken heeft: elektro-installatietechniek, datanetwerken, domotica, software, en hoe een computer in elkaar zit.
+                        Ook ontwikkel je tijdens je studie vaardigheden om andere computergebruikers te kunnen helpen. We besteden aandacht aan de nieuwste technologieën op het gebied van elektro en ICT.
+                        Als je een techneut bent en graag met je handen werkt, kun je als medewerker ICT alle kanten uit. Waar je ook voor kiest: jij zorgt ervoor dat ICT-voorzieningen goed blijven werken en helpt gebruikers als ze er problemen mee hebben.</p>
+                    <p>NIVEAU 2 BOL 1 JR</p>
+                </div>
+            </div>
         </div>
         <div class="info">
-            <data id="data-AD">
-                <ion-icon name="code-slash-outline" size="large"></ion-icon>
-                <div class="right-side">
-                    <p>AD</p>
-                    <p>NIVEAU 4 BOL 3-4 JR</p>
+            <div id="data-AD" class="dropdown-menu">
+                <div class="content-left">
+                    <ion-icon name="laptop-outline"></ion-icon>
                 </div>
-            </data>
+                <div class="content-right">
+                    <h3>Allround medewerker IT systems and devices</h3>
+                    <p>Als Allround medewerker IT systems and devices zorg jij ervoor dat je collega werknemers in een bedrijf hun werk kunnen doen. Zonder laptop, internet, e-mail, telefoon en werkende programma’s kan niemand werken. Jij zorgt ervoor dat het netwerk snel en betrouwbaar is.
+                        Gelukkig hoef je dat niet in je eentje te doen. Je werkt soms alleen, maar vaak ook in een team.
+                        Je werkt vooral aan het helpen van gebruikers en het installeren en configureren van allerlei programma’s en apparaten.
+                        Het maakt voor jou niet veel uit of iemand een vraag heeft over zijn laptop, tablet, telefoon, internet of een ingewikkeld programma. Iedere vraag is voor jou een leuke uitdaging. Ook geef je gebruikers uitleg en instructies, zodat zij goed met hun hardware en programma’s kunnen werken.</p>
+                    <p>NIVEAU 3 BOL 2 JR</p>
+                </div>
+            </div>
         </div>
-        </nav>
-
-        <!-- SD -->
-
-
-    </div>
     </section>
 
     <!-- Footer -->
@@ -273,24 +290,45 @@
 
     <script>
         // Rotate arrow when clicked on -- Not finished
-        let rotation = 0;
-        function rotateIcon() {
-          rotation += 90; // add 90 degrees, you can change this as you want
-          if (rotation === 90) { 
-            // 360 means rotate back to 0
-            rotation = 0;
-          }
-                document.querySelector("#rotated-icon").style.transform = "rotate(90deg)";
-            }
+        // let rotation = 0;
+        // function rotateIcon() {
+        //   rotation += 90; // add 90 degrees, you can change this as you want
+        //   if (rotation === 90) { 
+        //     // 360 means rotate back to 0
+        //     rotation = 0;
+        //   }
+        //         document.querySelector("#rotated-icon").style.transform = "rotate(90deg)";
+        //     }
 
         // Dropdown
-        let show = id => {
-            let dropElement = document.getElementById(id);
-            if (dropElement.style.display === "none") {
-                dropElement.style.display = "block";
-            } else {
-                dropElement.style.display = "none";
-            }
+        // let show = id => {
+        //     let dropElement = document.getElementById(id);
+        //     if (dropElement.style.display === "none") {
+        //         dropElement.style.display = "block";
+        //     } else {
+        //         dropElement.style.display = "none";
+        //     }
+        // }
+        var list = document.querySelectorAll("[data-toggle=dropdown]");
+        for (var i = 0, s = list.length; i < s; i++) {
+            var elm = list[i];
+            elm.addEventListener("click", function() {
+                // this for loop will hide previously clicked drop downs
+                for (var j = 0, z = list.length; j < z; j++) {
+                    if (list[j] != this) {
+                        var elm = document.querySelector(list[j].getAttribute("data-target"));
+                        var str = elm.className.replace("d-block");
+                        elm.className = str;
+                    }
+                } // if you like, remove the above loop
+                var obj = document.querySelector(this.getAttribute("data-target"));
+                if (obj.className.indexOf("d-block") > 0) {
+                    var temp = obj.className.replace("d-block", "");
+                    obj.className = temp;
+                } else {
+                    obj.className += " d-block";
+                }
+            });
         }
     </script>
     <!-- Icon Javascripts -->
