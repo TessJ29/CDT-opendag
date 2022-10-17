@@ -1,5 +1,9 @@
 section.about_landing {
     @include displayPosition($direction: column, $j-content: normal, $align-i: center);
+    img {
+        border-radius: 200px;
+        margin-bottom: 1rem;
+    }
     h1 {
         @include TextStyling($family: $oswald, $size: 48px, $weight: 400, $color: $DarkBlue);
     }

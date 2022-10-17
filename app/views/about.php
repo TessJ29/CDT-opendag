@@ -89,10 +89,10 @@
         </nav>
     </header>
     <section class="about_landing">
-        <h1>Over MBO Utrecht</h1>
         <div>
-            <img src="" alt="">
+            <img src="../../public/img/overmboimage.png" alt="">
         </div>
+        <h1>Over MBO Utrecht</h1>
         <div class="grid-container">
             <div class="grid-item">
                 <h4>MBO Utrecht</h4>
@@ -100,19 +100,19 @@
             </div>
             <div class="grid-item">
                 <h4>Kleinschalige school en betrokken docenten</h5>
-                <p>Bij MBO Utrecht kun je op goed bereikbare locaties wel 50 verschillende opleidingen volgen. Wij zijn een kleinschalige school waar jij je snel thuis zult voelen. Dat komt door onze betrokken docenten die niet alleen aandacht hebben voor jou als persoon, maar ook voor de manier waarop jij leert.</p>
+                    <p>Bij MBO Utrecht kun je op goed bereikbare locaties wel 50 verschillende opleidingen volgen. Wij zijn een kleinschalige school waar jij je snel thuis zult voelen. Dat komt door onze betrokken docenten die niet alleen aandacht hebben voor jou als persoon, maar ook voor de manier waarop jij leert.</p>
             </div>
             <div class="grid-item">
                 <p>MBO Utrecht is een kleinschalige, interconfessionele onderwijsinstelling die doelmatig onderwijs aanbiedt met focus op de hoogste niveaus van het mbo. We bieden met ca. 500 medewerkers ruim 50 mbo-opleidingen aan ongeveer 5.000 studenten, in uiteenlopende de domeinen van het mbo-onderwijs.</p>
             </div>
             <div class="grid-item">
                 <h4>Ruimte voor maatwerk</h5>
-                <p>Er is veel ruimte voor maatwerk. We hebben bijvoorbeeld veel doorstroom- en versnellingsmogelijkheden. Maar er is ook ondersteuning wanneer dat nodig is.</p>
+                    <p>Er is veel ruimte voor maatwerk. We hebben bijvoorbeeld veel doorstroom- en versnellingsmogelijkheden. Maar er is ook ondersteuning wanneer dat nodig is.</p>
             </div>
             <div class="grid-iteminvis"></div>
             <div class="grid-item">
                 <h4>Straks een goed opgeleide professional</h5>
-                <p>Bij ons word je niet alleen opgeleid voor een vak. We vinden het belangrijk dat je naast je opleiding ook vaardigheden leert die je helpen in deze wereld die continu verandert. Zo ben jij straks een goed opgeleide professional die klaar is om in de praktijk aan de slag te gaan.</p>
+                    <p>Bij ons word je niet alleen opgeleid voor een vak. We vinden het belangrijk dat je naast je opleiding ook vaardigheden leert die je helpen in deze wereld die continu verandert. Zo ben jij straks een goed opgeleide professional die klaar is om in de praktijk aan de slag te gaan.</p>
             </div>
         </div>
     </section>
