@@ -54,13 +54,14 @@ section.cards_section {
                 padding-bottom: .5rem;
             }
             h2 {
-                @include TextStyling($family: $oswald, $size: 36px, $weight: 400, $color: black);
+                @include TextStyling($family: $oswald, $size: 36px, $weight: 700, $color: $DarkBlue);
                 padding-bottom: .5rem;
             }
         }
-        div.card-call {
+        div.card-call, div.card-location, div.card-time {
 
             p {
+                @include TextStyling($family: $open-sans, $size: 16px, $weight: 400, $color: $Black);
                 margin-top: 10px;
             }
 
@@ -79,7 +80,7 @@ section.contact_form {
         border-radius: 10px;
             h1 {
                 @include displayPosition($j-content: center, $align-i: normal);
-                @include TextStyling($family: $oswald, $size: 32px, $weight: 400, $color: black); 
+                @include TextStyling($family: $oswald, $size: 32px, $weight: 700, $color: $DarkBlue); 
             }
         div.inputSection {
             @include displayPosition($direction: row, $j-content: center, $align-i: normal);
