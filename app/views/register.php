@@ -55,7 +55,7 @@
                 <div class="bottom__navbar">
                     <ul>
                         <li>
-                            <a class="active" href="./index.php">HOME</a>
+                            <a href="/index">HOME</a>
                         </li>
                         <li>
                             <a href="/about">OVER MBO UTRECHT</a>
