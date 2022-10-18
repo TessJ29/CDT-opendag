@@ -15,6 +15,12 @@
         <?php $this->view("partials/navbar"); ?>
 
         <!-- Content -->
+        <section class="workshop__hero">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+            <img src="./img/wsi.png" alt="">
+        </section>
         
         <section class="workshops">
             <div class="event">
@@ -35,9 +41,9 @@
                         Schoolkosten
                     </p>
                 </div>
-                <div class="">
+                <div class="photo__content">
                     <img src="./img/ws1.png" alt="">
-                    <div></div>
+                    <div class="circle-4"></div>
                     <button>
                         <a href="">INSCHRIJVEN</a>
                         <ion-icon name="arrow-forward-outline"></ion-icon>
@@ -45,9 +51,9 @@
                 </div>
             </div>
             <div class="event">
-                <div>
+                <div class="photo__content">
                     <img src="./img/ws2.png" alt="">
-                    <div></div>
+                    <div class="circle-5"></div>
                 </div>
                 <div class="event__info">
                     <h2>OPENDAGEN</h2>
@@ -74,9 +80,9 @@
                     </div>
                     <p>Tijdens een oriëntatieworkshop kun je ervaren hoe het is om bij ons op school te zitten en leer je meer over de verschillende opleidingen bij MBO Utrecht.</p>
                 </div>
-                <div>
-                <img src="./img/ws3.png" alt="">
-                    <div></div>
+                <div class="photo__content">
+                    <img src="./img/ws3.png" alt="">
+                    <div class="circle-6"></div>
                     <button>
                         <a href="">INSCHRIJVEN</a>
                         <ion-icon name="arrow-forward-outline"></ion-icon>
