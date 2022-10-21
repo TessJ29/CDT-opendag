@@ -1,5 +1,5 @@
 <h1>Registreren voor de opendag</h1>
-<form method="post" action+"/registeropenday/">
+<form method="post" action="/registeropenday/">
     <label for="">Voornaam</label>
     <input name="firstname" id="firstname" type="text">
     <br>
