@@ -15,12 +15,12 @@
             {
                 $data = filter_input_array(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
                 $this->model->create($data);
+                $this->view("register_openday/success");
             }
                 else
             {
-
+                $this->view("register_openday/index");
             }
-            $this->view("register_openday/index");
         }
     }
 ?>
