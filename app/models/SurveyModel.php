@@ -27,17 +27,13 @@ class SurveyModel
     {
         // var_dump($post);
         // exit();
-        $this->db->query("UPDATE `country`
-                          SET Name = :Name,
-                              CapitalCity = :capitalCity,
-                              Continent = :continent,
-                              Population = :population
+        $this->db->query("UPDATE `Survey`
+                          SET Answer = :Answer,
+                              Description = :Description,
                           WHERE Id = :id");
 
-        $this->db->bind(':Name', $post["Name"], PDO::PARAM_STR);
-        $this->db->bind(':capitalCity', $post["CapitalCity"], PDO::PARAM_STR);
-        $this->db->bind(':continent', $post["Continent"], PDO::PARAM_STR);
-        $this->db->bind(':population', $post["Population"], PDO::PARAM_INT);
+        $this->db->bind(':Answer', $post["Answer"], PDO::PARAM_STR);
+        $this->db->bind(':Description', $post["Description"], PDO::PARAM_STR);
         $this->db->bind(':id', $post["Id"], PDO::PARAM_INT);
 
 
