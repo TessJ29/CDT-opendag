@@ -29,26 +29,26 @@ class Database
         $this->statement = $this->dbHandler->prepare($sql);
     }
 
-        public function bind($param, $value, $type = null)
-        { 
-            switch($value)
-            {
+    public function bind($param, $value, $type = null)
+    {
+        if (is_null($type)) {
+            switch ($value) {
                 case is_int($value):
                     $type = PDO::PARAM_INT;
-                }
-                    else if(is_bool($value))
-                {
+                    break;
+                case is_bool($value):
                     $type = PDO::PARAM_BOOL;
                     break;
                 case is_null($value):
                     $type = PDO::PARAM_NULL;
                     break;
-                default:                    
+                default:
                     $type = PDO::PARAM_STR;
                     break;
-            } 
-            $this->statement->bindValue($param, $value, $type);
+            }
         }
+        $this->statement->bindValue($param, $value, $type);
+    }
 
     public function execute()
     {
