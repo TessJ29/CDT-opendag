@@ -22,8 +22,8 @@
       <?php flash('login') ?>
      <input type="hidden" name="type" value= "login">
      <div class="form-group">
-     <label for="name/email" class="form-label">Vul hier uw e-mailadres of gebruikernaam in: </label>
-     <input name="name/email" type="texy" class="form-control" placeholder="Username/Email...">
+     <label for="email" class="form-label">Vul hier uw e-mailadres of gebruikernaam in: </label>
+     <input name="email" type="texy" class="form-control" placeholder="Email...">
      
      </div>
      <div class="form-group">
