@@ -59,17 +59,23 @@
                         <a href="/course">OPLEIDINGEN</a>
                     </li>
                     <li>
-                        <a class="active" href="/contact">CONTACT</a>
+                        <a href="/contact">CONTACT</a>
                     </li>
                     <li>
                         <a href="/workshop">VOORLICHTINGEN</a>
                     </li>
 
                 </ul>
+                <ul>
                 <button>
-                    <a href="">Enquette</a>
+                    <a href="/register">Registreren</a>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                </button>                
+                <button>
+                    <a href="/login">Inloggen</a>
                     <ion-icon name="arrow-forward-outline"></ion-icon>
                 </button>
+                </ul>
             </div>
         </nav>
     </header>

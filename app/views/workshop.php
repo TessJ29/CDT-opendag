@@ -84,7 +84,7 @@
                     <img src="./img/ws3.png" alt="">
                     <div class="circle-6"></div>
                     <button>
-                        <a href="">INSCHRIJVEN</a>
+                        <a href="">MEER LEZEN</a>
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </button>
                 </div>
