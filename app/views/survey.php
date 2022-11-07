@@ -138,15 +138,15 @@
             <div class="fields">
                 <p>Heeft u wat gehad aan deze open dag?</p>
                 <div class="rating">
-                    <input type="radio" name="Answer5" id="radio21" value="Very Bad">
+                    <input type="radio" name="Answer" id="radio21" value="Very Bad">
                     <label for="radio21">1</label>
-                    <input type="radio" name="Answer5" id="radio22" value="Bad">
+                    <input type="radio" name="Answer" id="radio22" value="Bad">
                     <label for="radio22">2</label>
-                    <input type="radio" name="Answer5" id="radio23" value="Neutral">
+                    <input type="radio" name="Answer" id="radio23" value="Neutral">
                     <label for="radio23">3</label>
-                    <input type="radio" name="Answer5" id="radio24" value="Good">
+                    <input type="radio" name="Answer" id="radio24" value="Good">
                     <label for="radio24">4</label>
-                    <input type="radio" name="Answer5" id="radio25" value="Very Good">
+                    <input type="radio" name="Answer" id="radio25" value="Very Good">
                     <label for="radio25">5</label>
                 </div>
                 <div class="rating-footer">

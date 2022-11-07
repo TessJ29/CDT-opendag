@@ -79,11 +79,16 @@ section.banner {
 .survey-form {
   background-color: #fff;
   width: 500px;
-  margin: 1rem auto;
+  margin: 1.5rem auto;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
   h1 {
     box-sizing: border-box;
-    @include TextStyling( $family: $oswald, $size: 24px, $weight: 400, $color: $DarkBlue);
+    @include TextStyling(
+      $family: $oswald,
+      $size: 24px,
+      $weight: 400,
+      $color: $DarkBlue
+    );
     margin: 0;
     padding: 35px 25px 25px 25px;
     font-size: 20px;
@@ -108,10 +113,20 @@ section.banner {
       }
     }
     h4 {
-    @include TextStyling( $family: $open-sans, $size: 16px, $weight: 400, $color: $DarkBlue);
+      @include TextStyling(
+        $family: $open-sans,
+        $size: 16px,
+        $weight: 400,
+        $color: $DarkBlue
+      );
     }
     p {
-    @include TextStyling( $family: $open-sans, $size: 16px, $weight: 400, $color: $DarkBlue);
+      @include TextStyling(
+        $family: $open-sans,
+        $size: 16px,
+        $weight: 400,
+        $color: $DarkBlue
+      );
     }
   }
   select {
@@ -191,7 +206,7 @@ section.banner {
   }
   label {
     @include TextStyling($size: 16px, $weight: 600, $color: $AmberGrey);
-  } 
+  }
   .responses {
     padding: 15px;
     margin: 0;
