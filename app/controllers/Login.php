@@ -25,18 +25,18 @@ class Login extends Controller
         $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
         $data = [
-            'name/email' => trim($_POST['name/email']),
+            'email' => trim($_POST['email']),
             'usersPwd' => trim($_POST['usersPwd'])
         ];
 
-        if (empty($data['name/email']) || empty($data['usersPwd'])) {
+        if (empty($data['email']) || empty($data['usersPwd'])) {
             flash("login", "Please fill out all inputs");
             header("/login");
         }
 
-        if ($this->registerModel->findUserByEmailOrUsername($data['name/email'], $data['name/email'])) {
+        if ($this->registerModel->findUserByEmailOrUsername($data['email'], $data['email'])) {
             //User Found
-            $loggedInUser = $this->registerModel->login($data['name/email'], $data['usersPwd']);
+            $loggedInUser = $this->registerModel->login($data['email'], $data['usersPwd']);
             if ($loggedInUser) {
                 //Create session
                 $this->createUserSession($loggedInUser);
@@ -45,7 +45,7 @@ class Login extends Controller
                 redirect("/login");
             }
         } else {
-            flash("login", "No user found");
+            flash("login", "No email found");
             redirect("/login");
         }
     }

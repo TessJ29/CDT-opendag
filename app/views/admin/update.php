@@ -5,7 +5,7 @@
     <tbody>
         <tr>
             <td>
-                <label for="usersName">Naam:</label>
+                <label for="usersName">Voornaam:</label>
                 <input type="text" name="usersName" value="<?= $data["row"]->usersName?>">
             </td>
         </tr>
@@ -17,8 +17,8 @@
         </tr>
         <tr>
             <td>
-                <label for="usersUid">GebruikersUid</label>
-                <input type="text" name="usersUid" value="<?= $data["row"]->usersUid?>">
+                <label for="usersLastname">Achternaam:</label>
+                <input type="text" name="usersLastname" value="<?= $data["row"]->usersLastname?>">
             </td>
         </tr>
         <tr>

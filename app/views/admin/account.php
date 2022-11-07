@@ -18,16 +18,16 @@
     
     <h3><?= $data['title']; ?>
         <hr>
-      <a class="btn btn-dark btn-lg " href="<?= URLROOT ?>/index">Terug</a>
+      <a class="btn btn-dark btn-lg " href="<?= URLROOT ?>/admin/dashboard">Terug</a>
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <table class="table table-hover table-striped table-secondary">
                         <thead>
                             <th>Id</th>
-                            <th>Naam</th>
+                            <th>Voornaam</th>
                             <th>Email</th>
-                            <th>GebruikersUid</th>
+                            <th>Achternaam</th>
                             <th>Update</th>
                             <th>Delete</th>
                         </thead>

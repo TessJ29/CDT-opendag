@@ -25,31 +25,32 @@ class RegisterModel
         }
     } */
 
-    public function findUserByEmailOrUsername($email, $username) {
-        $this->db->query('SELECT * FROM users WHERE usersUid = :username or usersEmail = :email');
-        $this->db->bind(':username', $username);
+    public function findUserByEmailOrUsername($email)
+    {
+        $this->db->query('SELECT * FROM users WHERE usersEmail = :email');
         $this->db->bind(':email', $email);
 
         $row = $this->db->single();
 
-        if ($this->db->rowCount() > 0 ) {
+        if ($this->db->rowCount() > 0) {
             return $row;
         } else {
             return false;
         }
     }
 
-    public function register($data){
-        $this->db->query('INSERT INTO users (usersName, usersEmail, usersUid, usersPwd) 
-        VALUES (:name, :email, :Uid, :password)');
-
+    public function register($data)
+    {
+        $this->db->query('INSERT INTO users (usersName, usersEmail, usersLastname, usersPwd) 
+        VALUES (:name, :email, :Ltn, :password)');
+        //Bind values
         $this->db->bind(':name', $data['usersName']);
         $this->db->bind(':email', $data['usersEmail']);
-        $this->db->bind(':Uid', $data['usersUid']);
+        $this->db->bind(':Ltn', $data['usersLastname']);
         $this->db->bind(':password', $data['usersPwd']);
 
-        if($this->db->execute()) {
-           return true;
+        if ($this->db->execute()) {
+            return true;
         } else {
             return false;
         }
@@ -83,20 +84,21 @@ class RegisterModel
     }
     */
 
-    public function login($nameOrEmail, $password) {
+    public function login($nameOrEmail, $password)
+    {
         $row = $this->findUserByEmailOrUsername($nameOrEmail, $nameOrEmail);
 
-        if($row == false) return false;
+        if ($row == false) return false;
 
         $hashedPassword = $row->usersPwd;
-        if(password_verify($password, $hashedPassword)){
+        if (password_verify($password, $hashedPassword)) {
             return $row;
-        }else{
+        } else {
             return false;
         }
     }
 
-    //admin formulier laat zien, update, delete
+    //Account formulier laat zien, update, delete
     public function getAccount()
     {
         $this->db->query('SELECT * FROM users');
@@ -120,13 +122,68 @@ class RegisterModel
         $this->db->query("UPDATE `users` 
                          SET usersName = :usersName,
                              usersEmail = :usersEmail,
-                             usersUid = :usersUid
+                             usersLastname = :usersLastname
                          WHERE usersId = :usersId");
 
         $this->db->bind(':usersName', $post["usersName"], PDO::PARAM_STR);
-        $this->db->bind(':usersUid', $post["usersUid"], PDO::PARAM_STR);
+        $this->db->bind(':usersLastname', $post["usersLastname"], PDO::PARAM_STR);
         $this->db->bind(':usersEmail', $post["usersEmail"], PDO::PARAM_STR);
         $this->db->bind(':usersId', $post["usersId"], PDO::PARAM_INT);
         return $this->db->execute();
     }
+
+    /*
+      admin formulier van enquete
+    */
+    public function getSurvey()
+    {
+        $this->db->query('SELECT * FROM survey');
+        $result = $this->db->resultSet();
+        return $result;
+    }
+
+    public function deleteSurvey($id)
+    {
+        $this->db->query("DELETE FROM survey WHERE Id = :id");
+        $this->db->bind(':id', $id, PDO::PARAM_INT);
+        return $this->db->execute();
+    }
+    public function getSingleSurvey($id)
+    {
+        $this->db->query("SELECT * FROM survey WHERE Id = :Id");
+        $this->db->bind(':Id', $id, PDO::PARAM_INT);
+        return $this->db->single();
+    }
+    public function updateSurvey1($post)
+    {
+        $this->db->query("UPDATE `survey`
+        SET Question = :Question,
+            Answer = :Answer
+         WHERE Id = :Id");
+        $this->db->bind(':Question', $post["Question"], PDO::PARAM_STR);
+        $this->db->bind(':Answer', $post["Answer"], PDO::PARAM_STR);
+        $this->db->bind(':Id', $post["Id"], PDO::PARAM_INT);
+
+        return $this->db->execute();
+    }
+    public function createSurvey($post)
+   {
+
+    if (empty($_POST["Question"] || $_POST["Answer"])) {
+        header('Location: /admin/create');
+    }
+    else {
+        $this->db->query("INSERT INTO `survey` (`Id`, 
+                                               `Question`, 
+                                               `Answer`) 
+                        VALUES                (:Id, 
+                                               :Question, 
+                                               :Answer)");
+      $this->db->bind(':Question', $post["Question"], PDO::PARAM_STR);
+      $this->db->bind(':Answer', $post["Answer"], PDO::PARAM_STR);
+      $this->db->bind(':Id', NULL, PDO::PARAM_INT);
+
+      return $this->db->execute();
+    }
+   }
 }

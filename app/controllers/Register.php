@@ -28,21 +28,20 @@ class Register extends Controller
         $data = [
             'usersName' => trim($_POST['usersName']),
             'usersEmail' => trim($_POST['usersEmail']),
-            'usersUid' => trim($_POST['usersUid']),
+            'usersLastname' => trim($_POST['usersLastname']),
             'usersPwd' => trim($_POST['usersPwd']),
-            'pwdRepeat' => trim($_POST['pwdRepeat'])
         ];
 
         //Validate inputs
         if (
-            empty($data['usersName']) || empty($data['usersEmail']) || empty($data['usersUid']) ||
-            empty($data['usersPwd']) || empty($data['pwdRepeat'])
+            empty($data['usersName']) || empty($data['usersEmail']) || empty($data['usersLastname']) ||
+            empty($data['usersPwd'])
         ) {
             flash("register", "Please fill out all inputs");
             redirect("/register");
         }
 
-        if(!preg_match("/^[a-zA-Z0-9]*$/", $data['usersUid'])){
+        if(!preg_match("/^[a-zA-Z0-9]*$/", $data['usersName'])){
             flash("register", "Invalid username");
             redirect("/register");
         }
@@ -55,13 +54,10 @@ class Register extends Controller
         if(strlen($data['usersPwd']) < 6){
             flash("register", "Invalid password");
             redirect("/register");
-        } else if($data['usersPwd'] !== $data['pwdRepeat']){
-            flash("register", "Passwords don't match");
-            redirect("/register");
-        }
+        } 
 
-        if($this->registerModel->findUserByEmailOrUsername($data['usersEmail'], $data['usersName'])){
-            flash("register", "Username or email already taken");
+        if($this->registerModel->findUserByEmailOrUsername($data['usersEmail'])){
+            flash("register", "email already taken");
             redirect("/register");
         }
 
