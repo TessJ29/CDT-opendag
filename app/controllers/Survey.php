@@ -13,18 +13,16 @@ class Survey extends Controller
     {
         $questions = $this->surveyModel->getQuestions();
 
-        $rows = '';
+        $row = '';
         foreach ($questions as $value) {
-            $rows .= "<tr>
-                            <td>$value->Id.</td>
-                            <td>$value->Question</td>
-                            <td>$value->Answer</td>
-                            <td><input></input></td>
-                          </tr>";
+
+            $row .= "<tr>
+            <td>$value->Question</td>
+            </tr>";
         }
 
         $data = [
-            'questions' => $rows
+            'Question' => $row
         ];
 
         $this->view('Survey', $data);
@@ -32,7 +30,7 @@ class Survey extends Controller
 
     public function update($id = NULL)
     {
-        //var_dump($_SERVER);exit();
+        var_dump($_SERVER);exit();
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
