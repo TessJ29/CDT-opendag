@@ -67,7 +67,7 @@
 
                 </ul>
                 <button>
-                    <a href="">Enquette</a>
+                    <a href="/survey">Enquette</a>
                     <ion-icon name="arrow-forward-outline"></ion-icon>
                 </button>
             </div>
