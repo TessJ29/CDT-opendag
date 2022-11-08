@@ -1,5 +1,5 @@
 <?php
-    class Workshop extends Controller
+    class WorkshopFloorplan extends Controller
     {
         public function __construct()
         {
