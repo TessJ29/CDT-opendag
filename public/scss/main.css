@@ -28,11 +28,10 @@ header nav div.top__navbar {
   align-items: flex-end;
   padding: 1rem 0rem 0rem 0rem;
 }
-header nav div.top__navbar ul.navbar__logo li {
+header nav div.top__navbar div.navbar__logo {
   padding: 0rem 1rem;
-  list-style-type: none;
 }
-header nav div.top__navbar ul.navbar__logo li img {
+header nav div.top__navbar div.navbar__logo img {
   height: 5rem;
 }
 header nav div.top__navbar ul.navbar__contact--links {
