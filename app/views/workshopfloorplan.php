@@ -16,7 +16,19 @@
 
         <!-- Content -->
         <section>
-            <h1>Hallo</h1>
+            <div>
+                <div>
+                    <h2>Workshop titel</h2>
+                    <p>Workshop informatie.</p>
+                    <button>
+                        <a href="">Inschrijven voor workshop</a>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </button>
+                </div>
+                <div>
+                    <img src="../../public/img/plattegrond3.png" alt="">
+                </div>
+            </div>
         </section>
 
         <!-- Footer -->

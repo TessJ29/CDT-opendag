@@ -235,7 +235,7 @@ section.landing__section {
   height: 65rem;
   width: 100%;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1400px) {
   section.landing__section {
     height: 80rem;
   }
@@ -247,7 +247,7 @@ section.landing__section div.intro {
   align-items: center;
   width: 70%;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1400px) {
   section.landing__section div.intro {
     display: flex;
     flex-direction: column;
@@ -263,7 +263,7 @@ section.landing__section div.intro div {
   width: 40%;
   display: flex;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1400px) {
   section.landing__section div.intro div {
     width: 100%;
   }
@@ -314,7 +314,7 @@ section.landing__section div.intro div div.circle-1 {
   left: 60%;
   z-index: -1;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1400px) {
   section.landing__section div.intro div div.circle-1 {
     position: absolute;
     content: "";
@@ -350,7 +350,7 @@ section.landing__section div.intro div div.circle-2 {
   left: 70%;
   z-index: -1;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1400px) {
   section.landing__section div.intro div div.circle-2 {
     position: absolute;
     content: "";
