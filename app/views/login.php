@@ -1,3 +1,6 @@
+<?php 
+   require_once APPROOT . '../helpers/session_helper.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,30 +11,31 @@
         <title>MBO Utrecht</title>
         <!-- stylesheet links -->
         <link rel="stylesheet" href="/public/scss/main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     </head>
     <body>
 
         <!-- Navigation bar -->
-
         <?php $this->view("partials/navbar"); ?>
 
         <!-- Content -->
 
         <section class="login__form">
             <div class="container">
-                <form class="form">
+                <form method="post" class="form" action="<?= URLROOT?>/Login/login">
+                    <?php flash('login') ?>
                     <ion-icon name="person-outline"></ion-icon>
                     <div>
-                        <label for="">Email: </label>
+                        <label for="email">Email: </label>
                     </div>
-                    <input type="text">
+                    <input name="email" type="text">
                     <div>                        
-                        <label for="">Wachtwoord: </label>
+                        <label for="password">Wachtwoord: </label>
                     </div>
-                    <input type="text">
+                    <input name="usersPwd" type="password">
                     <div class="submit__btn">
-                        <button>
-                            <a href="/">Inloggen</a>
+                        <button type="submit">
+                            Inloggen
                             <ion-icon name="arrow-forward-outline"></ion-icon>
                         </button>
                     </div>
@@ -44,77 +48,7 @@
 
         <!-- Footer -->
 
-        <footer>
-            <div class="footer__top--container">
-                <div class="footer__top">
-                    <div>
-                        <h3>Volg ons</h3>
-                        <ul>
-                            <li>
-                                <ion-icon name="logo-facebook"></ion-icon>
-                                <p>Facebook</p>
-                            </li>
-                            <li>
-                                <ion-icon name="logo-instagram"></ion-icon>
-                                <p>Instagram</p>
-                            </li>
-                            <li>
-                                <ion-icon name="logo-youtube"></ion-icon>
-                                <p>YouTube</p>
-                            </li>
-                            <li>
-                                <ion-icon name="logo-twitter"></ion-icon>
-                                <p>Twitter</p>
-                            </li>
-                            <li>
-                                <ion-icon name="logo-linkedin"></ion-icon>
-                                <p>LinkedIn</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Contact</h3>
-                        <ul>
-                            <li>
-                                <ion-icon name="location-outline"></ion-icon>
-                                <p>Daltonlaan 300 3584 BK Utrecht</p>
-                            </li>
-                            <li>
-                                <ion-icon name="call-outline"></ion-icon>
-                                <p>03 - 28 15 100</p>
-                            </li>
-                            <li>
-                                <ion-icon name="logo-whatsapp"></ion-icon>
-                                <p>06 - 257 050 51 (WhatsApp)</p>
-                            </li>
-                            <li>
-                                <ion-icon name="mail-outline"></ion-icon>
-                                <p>info@mboutrecht.nl</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Snel naar</h3>
-                        <ul>
-                            <li>
-                                <p><a href="">Homepagina</a></p>
-                            </li>
-                            <li>
-                                <p><a href="">Opleidingen</a></p>
-                            </li>
-                            <li>
-                                <p><a href="">Inschrijven voor workshop</a></p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__bottom">
-                <p>MBO Utrecht ICT Academie 2022. All rights reserved.</p>
-            </div>
-        </footer>
+        <?php $this->view("partials/footer"); ?>
 
         <!-- Javascripts -->
 
