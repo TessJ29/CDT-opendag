@@ -25,12 +25,12 @@ section.course_section{
         div.card1, div.card2, div.card3, div.card4 {
             margin: 0;
             div.cardtitle1 {
-                @include TextStyling($family: $open-sans, $size: 36px, $weight: 500, $color: $DarkBlue);
+                @include TextStyling($family: $oswald, $size: 36px, $weight: 700, $color: $DarkBlue);
                 padding-bottom: 3.09rem;
                 text-align: center;
             }
             div.cardtitle2 {
-                @include TextStyling($family: $open-sans, $size: 36px, $weight: 500, $color: $DarkBlue);
+                @include TextStyling($family: $oswald, $size: 36px, $weight: 700, $color: $DarkBlue);
                 padding-bottom: .2rem;
                 text-align: center;
             }
@@ -46,7 +46,7 @@ section.course_section{
     } 
 
     section.course_information {
-        height: 35vh;
+        height: 40vh;
         .info {
             position: relative;
             @include displayPosition($direction: normal, $j-content: center, $align-i: center);
@@ -78,8 +78,11 @@ section.course_section{
             max-width: 90%;
             float: right;
             @include displayPosition($direction: column, $j-content: center, $align-i: normal);
+            h3 {
+                @include TextStyling($family: $open-sans, $size: 22px, $weight: 700, $color: black);
+            }
             p {
-                @include TextStyling($family: $open-sans, $size: 16px, $weight: 200, $color: black);
+                @include TextStyling($family: $open-sans, $size: 16px, $weight: 400, $color: black);
                 margin-top: 25px;
             }
           }
