@@ -10,6 +10,7 @@
 
         public function view($view, $data = [])
         {
+            // var_dump(file_exists("../app/views/" . $view . ".php")); exit;
             if(file_exists("../app/views/" . $view . ".php"))
             {
                 require_once("../app/views/" . $view . ".php");

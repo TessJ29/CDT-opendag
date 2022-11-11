@@ -1,9 +1,9 @@
 <header>
         <nav>
             <div class="top__navbar">
-                <ul class="navbar__logo">
-                    <li><img src="./img/mbologo.png" alt=""></li>
-                </ul>
+                <div class="navbar__logo">
+                    <img src="/img/mbologo.png" alt="">
+                </div>
                 <div class="navbar__toggle" id="mobile-menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -50,7 +50,7 @@
             <div class="bottom__navbar">
                 <ul>
                     <li>
-                        <a href="./index.php">HOME</a>
+                        <a href="/index.php">HOME</a>
                     </li>
                     <li>
                         <a href="/about">OVER MBO UTRECHT</a>
