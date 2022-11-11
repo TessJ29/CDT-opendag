@@ -137,31 +137,29 @@ class RegisterModel
     */
     public function getSurvey()
     {
-        $this->db->query('SELECT * FROM survey');
+        $this->db->query('SELECT * FROM question');
         $result = $this->db->resultSet();
         return $result;
     }
 
     public function deleteSurvey($id)
     {
-        $this->db->query("DELETE FROM survey WHERE Id = :id");
+        $this->db->query("DELETE FROM question WHERE Id = :id");
         $this->db->bind(':id', $id, PDO::PARAM_INT);
         return $this->db->execute();
     }
     public function getSingleSurvey($id)
     {
-        $this->db->query("SELECT * FROM survey WHERE Id = :Id");
+        $this->db->query("SELECT * FROM question WHERE Id = :Id");
         $this->db->bind(':Id', $id, PDO::PARAM_INT);
         return $this->db->single();
     }
     public function updateSurvey1($post)
     {
-        $this->db->query("UPDATE `survey`
-        SET Question = :Question,
-            Answer = :Answer
+        $this->db->query("UPDATE `question`
+        SET Question = :Question
          WHERE Id = :Id");
         $this->db->bind(':Question', $post["Question"], PDO::PARAM_STR);
-        $this->db->bind(':Answer', $post["Answer"], PDO::PARAM_STR);
         $this->db->bind(':Id', $post["Id"], PDO::PARAM_INT);
 
         return $this->db->execute();
@@ -173,14 +171,13 @@ class RegisterModel
         header('Location: /admin/create');
     }
     else {
-        $this->db->query("INSERT INTO `survey` (`Id`, 
-                                               `Question`, 
-                                               `Answer`) 
+        $this->db->query("INSERT INTO `question` (`Id`, 
+                                               `Question` 
+                                               ) 
                         VALUES                (:Id, 
-                                               :Question, 
-                                               :Answer)");
+                                               :Question 
+                                               )");
       $this->db->bind(':Question', $post["Question"], PDO::PARAM_STR);
-      $this->db->bind(':Answer', $post["Answer"], PDO::PARAM_STR);
       $this->db->bind(':Id', NULL, PDO::PARAM_INT);
 
       return $this->db->execute();
