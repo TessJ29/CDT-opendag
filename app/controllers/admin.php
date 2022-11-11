@@ -8,8 +8,11 @@
         }
 
         public function index()
-        {
-           $this->view('admin/dashboard');
+        {  
+            
+                $this->view('admin/dashboard');
+
+            
         }
 
         /**
@@ -81,7 +84,6 @@
                 $rows .= "<tr>
                       <td>$value->Id</td>
                       <td>$value->Question</td>
-                      <td>$value->Answer</td>
                       <td><a href='" . URLROOT . "/admin/updatesurvey/$value->Id'>update</a></td>
                       <td><a href='" . URLROOT . "/admin/deletesurvey/$value->Id'>delete</a></td>
                     </tr>";
@@ -138,5 +140,7 @@
          $this->view("admin/createsurvey", $data);
         }
         }
+
+
     }
 ?>

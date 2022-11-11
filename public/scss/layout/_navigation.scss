@@ -76,9 +76,10 @@ header{
                     }
                 }
             }
-            button{
-                @include Btn__With--border;
-                // @include Btn__Without--border;
+            ul{
+                button{
+                    @include Btn__With--border;
+                }
             }
         }
     }
