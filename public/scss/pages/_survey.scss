@@ -27,54 +27,6 @@ section.banner {
     }
   }
 }
-// section.form {
-//     form {
-//         div {
-//             @include displayPosition($direction: column, $j-content: normal, $align-i: center);
-//             margin: 2rem 20rem;
-//             background-color: #b0e6f3;
-//             border-radius: 25px;
-//             div {
-//                 margin: 2rem 0rem;
-//                 @include displayPosition($direction: column, $j-content: normal, $align-i: center);
-//                 label {
-//                     @include TextStyling($family: normal, $size: 22px, $weight: 400, $color: black);
-//                 }
-//                 div.line {
-//                     margin: 4px;
-//                     width: 100%;
-//                     height: 5px;
-//                     background-color: $DarkBlue;
-//                 }
-//                 div {
-//                 @include displayPosition($direction: row, $j-content: normal, $align-i: normal);
-//                 th {
-//                     padding: 0rem 1rem;
-//                 }
-//                 td {
-//                     padding: 0rem 5rem;
-//                 }
-//                 textarea {
-//                     width: 25vw;
-//                     max-width: 25vw;
-//                     min-height: 10vh;
-//                     padding: .5rem;
-//                     color: black;
-//                     background-color: $White;
-//                     border-radius: 10px;
-//                     border: 1px black;
-//                 }
-//                 }
-//             }
-//             input {
-//                 margin: 1rem;
-//                 padding: 1rem;
-//                 text-align: center;
-//                 background-color: $MaximumBlue;
-//             }
-//         }
-//     }
-// }
 
 .survey-form {
   background-color: #fff;

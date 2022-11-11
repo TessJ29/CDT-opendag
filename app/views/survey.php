@@ -20,7 +20,7 @@
             <h5>Een aantal vragen over hoe u de open dag heeft ervaren.</h5>
         </div>
     </section>
-    <form class="survey-form" action="" method="post">
+    <form class="survey-form" action="/survey/update" method="post">
         <h1><i class="" far fa-list-alt></i>Vragen formulier</h1>
         <div class="steps">
             <div class="step current"></div>
@@ -32,8 +32,8 @@
         </div>
         <div class="step-content current" data-step="1">
             <div class="fields">
-                <p>Hoe heeft u de open dag ervaren?</p>
-                <div class="rating">
+                <p><?= $data['Question']; ?></p>
+                <div class="rating">    
                     <input type="radio" name="Answer" id="radio1" value="Very Bad">
                     <label for="radio1">1</label>
                     <input type="radio" name="Answer" id="radio2" value="Bad">
