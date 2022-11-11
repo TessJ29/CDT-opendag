@@ -27,12 +27,12 @@
                         <tbody>
                             <tr>
                                 <th scope="row">1</th>
-                                <td><a href="<?= URLROOT ?>admin/account">Account</a></td>
+                                <td><a href="<?= URLROOT ?>/admin/account">Account</a></td>
                             </tr>
 
                             <tr>
                                 <th scope="row">2</th>
-                                <td><a href="<?= URLROOT ?>admin/survey">Survey</a></td>
+                                <td><a href="<?= URLROOT ?>/admin/survey">Survey</a></td>
                             </tr>
 
 

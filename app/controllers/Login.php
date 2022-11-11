@@ -24,6 +24,7 @@ class Login extends Controller
     {
         $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
+        var_dump($_POST);
         $data = [
             'email' => trim($_POST['email']),
             'usersPwd' => trim($_POST['usersPwd'])
