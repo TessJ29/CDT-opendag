@@ -192,8 +192,6 @@ section.banner {
             &:before {
               content: "";
               position: absolute;
-              left: 0;
-              top: 0;
               width: 30px;
               height: 30px;
               border: 1px solid $MaximumBlue;
@@ -204,8 +202,6 @@ section.banner {
             &:after {
               content: "";
               position: absolute;
-              top: 0;
-              left: 0;
               width: 31px;
               height: 31px;
               border-radius: 100%;
