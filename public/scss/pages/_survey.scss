@@ -3,26 +3,13 @@ section.banner {
     width: 100%;
     height: 20%;
     padding: 2rem;
-    @include displayPosition(
-      $direction: column,
-      $j-content: center,
-      $align-i: center
-    );
+    @include displayPosition($direction: column, $j-content: center, $align-i: center);
     background-color: $MaximumBlue;
     h1 {
-      @include TextStyling(
-        $family: $oswald,
-        $size: 64px,
-        $weight: 600,
-        $color: $White
-      );
+      @include TextStyling($family: $oswald, $size: 64px, $weight: 600, $color: $White);
     }
     h5 {
-      @include TextStyling(
-        $family: $oswald,
-        $size: 32px,
-        $weight: 400,
-        $color: $White
+      @include TextStyling( $family: $oswald, $size: 32px, $weight: 400, $color: $White
       );
     }
   }
@@ -36,29 +23,17 @@ section.banner {
   text-align: center;
   h1 {
     box-sizing: border-box;
-    @include TextStyling(
-      $family: $oswald,
-      $size: 24px,
-      $weight: 400,
-      $color: $DarkBlue
-    );
+    @include TextStyling(  $family: $oswald, $size: 24px, $weight: 400, $color: $DarkBlue);
     margin: 0;
     padding: 35px 25px 25px 25px;
-    font-size: 20px;
-    color: #6a737f;
-    font-weight: 600;
     i {
       padding-right: 10px;
       font-size: 24px;
     }
   }
-  p, div.text {
-    @include TextStyling(
-      $family: $open-sans,
-      $size: 24px,
-      $weight: 400,
-      $color: $DarkBlue
-    );
+  p,
+  div.text {
+    @include TextStyling( $family: $open-sans, $size: 24px, $weight: 400, $color: $DarkBlue);
     padding: 1rem;
     text-align: center;
   }
@@ -66,8 +41,7 @@ section.banner {
     position: relative;
     padding: 20px;
     .wrapper {
-      display: flex;
-      justify-content: space-between;
+      @include displayPosition($j-content: space-between);
       > div {
         width: 100%;
       }
@@ -76,20 +50,10 @@ section.banner {
       }
     }
     h4 {
-      @include TextStyling(
-        $family: $open-sans,
-        $size: 16px,
-        $weight: 400,
-        $color: $DarkBlue
-      );
+      @include TextStyling($family: $open-sans, $size: 16px, $weight: 400, $color: $DarkBlue);
     }
     p {
-      @include TextStyling(
-        $family: $open-sans,
-        $size: 16px,
-        $weight: 400,
-        $color: $DarkBlue
-      );
+      @include TextStyling( $family: $open-sans, $size: 16px, $weight: 400, $color: $DarkBlue);
     }
   }
   select {
@@ -121,26 +85,20 @@ section.banner {
     }
   }
   .buttons {
-    @include displayPosition(
-      $direction: row,
-      $j-content: space-between,
-      $align-i: normal
-    );
+    @include displayPosition( $direction: row, $j-content: space-between, $align-i: normal);
     padding: 20px;
     border-top: 1px solid #eceff2;
   }
   .btn {
     display: inline-block;
     padding: 10px 20px;
-    border: 0;
     background-color: $MaximumBlue;
-    font-weight: bold;
-    color: #fff;
+    @include TextStyling($size: 14px, $weight: 700);
+    color: $White;
     cursor: pointer;
     border-radius: 25px;
     margin-right: 5px;
     text-decoration: none;
-    font-size: 14px;
     &:hover {
       background-color: $LightBlue;
     }
@@ -162,7 +120,7 @@ section.banner {
     padding-bottom: 20px;
     i {
       position: absolute;
-      color: #dfe2e5;
+      color: $White;
       top: 25px;
       left: 15px;
       z-index: 10;
@@ -190,11 +148,9 @@ section.banner {
     &::before {
       content: "";
       position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
       height: 4px;
-      background-color: #f2f4f7;
+      background-color: $LightGrey;
       margin: auto 0;
       top: 0;
       bottom: 0;
@@ -203,8 +159,8 @@ section.banner {
     .step {
       width: 25px;
       height: 25px;
-      background-color: #f2f4f7;
-      border: 3px solid #f2f4f7;
+      background-color: $White;
+      border: 3px solid $Silver;
       border-radius: 50px;
       z-index: 1;
     }
@@ -216,8 +172,7 @@ section.banner {
     }
   }
   .rating {
-    display: flex;
-    justify-content: space-between;
+    @include displayPosition( $j-content: space-between);
     padding: 5px 0;
     input[type="radio"] {
       &:checked {
@@ -225,17 +180,15 @@ section.banner {
         left: -9999px;
         + {
           label {
-            display: flex;
+            @include displayPosition($j-content: center, $align-i: center);
             position: relative;
             font-size: 14px;
-            justify-content: center;
-            align-items: center;
             width: 31px;
             height: 31px;
             cursor: pointer;
-            color: #8e939b;
+            color: $AmberGrey;
             z-index: 10;
-            color: #fff;
+            color: $White;
             &:before {
               content: "";
               position: absolute;
@@ -245,7 +198,7 @@ section.banner {
               height: 30px;
               border: 1px solid $MaximumBlue;
               border-radius: 100%;
-              background: #fff;
+              background: $White;
               z-index: -1;
             }
             &:after {
@@ -284,7 +237,7 @@ section.banner {
               height: 30px;
               border: 1px solid #dfe0e0;
               border-radius: 100%;
-              background: #fff;
+              background: $White;
               z-index: -1;
             }
             &:after {
@@ -305,22 +258,19 @@ section.banner {
     }
   }
   .rating-footer {
-    display: flex;
-    justify-content: space-between;
+    @include displayPosition( $j-content: space-between);
     font-size: 14px;
-    color: #8e939b;
+    color: $LightGrey;
     padding: 15px 0 25px;
   }
   .group {
-    display: flex;
+    @include displayPosition( $j-content: center);
     flex-flow: column;
-    justify-content: center;
     padding-bottom: 15px;
     label {
-      display: flex;
+    @include displayPosition( $align-i: center);
       font-weight: 500;
       height: 25px;
-      align-items: center;
       padding-bottom: 5px;
     }
     input[type="radio"] {
@@ -370,14 +320,5 @@ section.banner {
   }
   .step-content.current {
     display: block;
-  }
-  .result {
-    padding: 25px;
-    h3 {
-      color: #6a737f;
-    }
-    p {
-      font-weight: 500;
-    }
   }
 }
