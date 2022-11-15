@@ -55,6 +55,15 @@ class Login extends Controller
         $_SESSION['usersId'] = $user->usersId;
         $_SESSION['usersName'] = $user->usersName;
         $_SESSION['usersEmail'] = $user->usersEmail;
-        redirect("/admin");
+        redirect("/index");
+    }
+
+    public function logout(){
+        unset($_SESSION['usersId']);
+        unset($_SESSION['usersName']);
+        unset($_SESSION['usersEmail']);
+        session_destroy();
+        redirect("/index");
     }
 }
+
