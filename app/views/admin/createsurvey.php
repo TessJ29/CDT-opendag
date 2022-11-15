@@ -13,24 +13,44 @@
 <body>
     <?php $this->view("partials/navbar"); ?>
 
-<?= $data['title']; ?>
-<form action="<?= URLROOT; ?>/admin/create" method="post">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-11">
+                <h4><?= $data['title']; ?></h4>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+    <form action="<?= URLROOT; ?>/admin/create" method="post">
   <table>
     <tbody>
       <tr>
         <td>
-          <label for="Question">Vraag:</label>
-          <input type="text" name="Question" id="Question">
+          <label for="Question" class="form-label">Vraag:</label>
+          <input type="text"class="form-control" name="Question" id="Question">
         </td>
       </tr>
       <tr>
         <td>
-          <input type="submit" value="Verzenden">
+          <br>
+          <input type="submit" class="btn btn-primary" value="Verzenden">
         </td>
       </tr>
     </tbody>
   </table>
 </form>
+    </div>
+    <div class="col-4"></div>
+  </div>
+</div>
+
+<br>
+
 
 <?php $this->view("partials/footer"); ?>
 

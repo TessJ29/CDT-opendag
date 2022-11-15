@@ -12,15 +12,27 @@
 <?php $this->view("partials/navbar"); ?>
 
 
-<?= $data['title']; ?>
 
-<form action="<?= URLROOT; ?>/admin/updateSurvey" method="post">
+<div class="container">
+        <div class="row text-center">
+            <div class="col-11">
+                <?= $data['title']; ?>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+        <form action="<?= URLROOT; ?>/admin/updateSurvey" method="post">
   <table>
     <tbody>
         <tr>
             <td>
-                <label for="Question">Vraag:</label>
-                <input type="text" name="Question" value="<?= $data["row"]->Question?>">
+                <label for="Question" class="form-label">Vraag:</label>
+                <input type="text" class="form-control"  name="Question" value="<?= $data["row"]->Question?>">
             </td>
         </tr>
         <tr>
@@ -30,12 +42,20 @@
         </tr>
         <tr>
             <td>
-                <input type="submit" value="Verzenden">
+                <br>
+                <input type="submit" class="btn btn-primary" value="Verzenden">
             </td>
         </tr>
     </tbody>
   </table>
 </form>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+
+<br>
+
 
 <?php $this->view("partials/footer"); ?>
 
