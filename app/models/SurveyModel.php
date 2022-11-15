@@ -11,30 +11,23 @@ class SurveyModel
 
     public function getQuestions()
     {
-        $this->db->query("SELECT * FROM `Question`");
+        $this->db->query("SELECT *
+                          FROM Question");
+
         $result = $this->db->resultSet();
+
         return $result;
     }
 
-    public function getSingleQuestion($id)
+    public function createAnswer($post)
     {
-        $this->db->query("SELECT * FROM Question WHERE Id = :id");
-        $this->db->bind(':id', $id, PDO::PARAM_INT);
-        return $this->db->single();
-    }
-
-    public function updateAnswer($post)
-    {
-        // var_dump($post);
-        // exit();
-        $this->db->query("UPDATE `User_answer`
-                          SET Answer = :Answer,
-                          WHERE Id = :id");
-
-        $this->db->bind(':Answer', $post["Answer"], PDO::PARAM_STR);
-        $this->db->bind(':id', $post["Id"], PDO::PARAM_INT);
-
+        $this->db->query("INSERT INTO Answer
+                                      (Id, Answer)
+                          VALUES      (NULL, :Answer)");
+                          
+        $this->db->bind(':Answer', $_POST['Answer']);
 
         return $this->db->execute();
     }
+
 }

@@ -11,15 +11,23 @@ class Survey extends Controller
 
     public function index()
     {
-        $questions = $this->surveyModel->getQuestions();
+        $result = $this->surveyModel->getQuestions();
 
         $row = '';
-        foreach ($questions as $value) {
+        $button = '';
+        $i = 0;
+        foreach ($result as $questions) {
+            // var_dump($questions);
+            $i++;
 
-            $row .= "<tr>
-            <td>$value->Question</td>
-            </tr>";
+            $row = $questions->Question;
+
+            $button = "<div class='buttons'>
+                        <input type='submit' class='btn' data-set-step='3' value='Volgende'>
+                       </div>
+            ";
         }
+
 
         $data = [
             'Question' => $row
@@ -28,25 +36,19 @@ class Survey extends Controller
         $this->view('Survey', $data);
     }
 
-    public function update($id = NULL)
+    public function create()
     {
-        var_dump($_SERVER);exit();
-
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            try {
+                $_POST = FILTER_INPUT_ARRAY(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
-            $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+                $this->surveyModel->createAnswer($_POST);
 
-            $this->surveyModel->updateAnswer($_POST);
+            } catch (PDOException $e) {
+                echo "Het inserten van het record is niet gelukt";
+            }
 
-            header("Location: " . URLROOT . "/survey");
-        } else {
-            $row = $this->surveyModel->getSingleQuestion($id);
-            $data = [
-                'row' => $row
-
-            ];
-
-            $this->view("survey/update", $data);
+            $this->view('Survey');
         }
     }
 }
