@@ -1,0 +1,30 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+@import '../components/buttons';
+
+body{
+    section{
+        @include displayPosition($direction: row, $j-content: center, $align-i: center);
+        div{
+            @include displayPosition($direction: row, $j-content: center, $align-i: center);
+            div.floorplan__info{
+                @include displayPosition($direction: column, $j-content: center, $align-i: center);
+                h2{
+                    @include TextStyling($family: $oswald, $size: 36px, $weight: 700, $color: $DarkBlue);
+                }
+                p{
+                    margin: 5rem 0rem 5rem 0rem;
+                    @include TextStyling($family: $open-sans, $size: 20px, $weight: 400, $color: $Black);
+                }
+                button{
+                    @include Btn__With--border;  
+                }
+            }
+            // div.floorplan__img{
+            //     img{
+
+            //     }
+            // }
+        }
+    }
+}
