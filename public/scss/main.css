@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -1483,4 +1484,62 @@ section.about_landing div.grid-container div.grid-item p {
   font-size: 16px;
   font-weight: 400;
   color: #000000;
+}
+
+body section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body section div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body section div div.floorplan__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body section div div.floorplan__info h2 {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #003C51;
+}
+body section div div.floorplan__info p {
+  margin: 5rem 0rem 5rem 0rem;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+}
+body section div div.floorplan__info button {
+  display: flex;
+  flex-direction: normal;
+  justify-content: normal;
+  align-items: center;
+  margin: 0rem 1rem;
+  background-color: #ffffff;
+  border: solid 4px #62E3FF;
+  border-radius: 5rem;
+  padding: 0.5rem 0.5rem;
+}
+body section div div.floorplan__info button a {
+  padding: 0rem 0rem 0rem 0.5rem;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #003C51;
+}
+body section div div.floorplan__info button ion-icon {
+  padding: 0rem 0.5rem;
+  font-size: 24px;
+  color: #003C51;
 }/*# sourceMappingURL=main.css.map */

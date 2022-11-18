@@ -17,7 +17,7 @@
         <!-- Content -->
         <section>
             <div>
-                <div>
+                <div class="floorplan__info">
                     <h2>Workshop titel</h2>
                     <p>Workshop informatie.</p>
                     <button>
@@ -25,7 +25,7 @@
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </button>
                 </div>
-                <div>
+                <div class="floorplan__img">
                     <img src="../../public/img/plattegrond3.png" alt="">
                 </div>
             </div>
