@@ -18,14 +18,11 @@ header{
         div.top__navbar{
             @include displayPosition($direction: row, $j-content: space-between, $align-i: flex-end);
             padding: 1rem 0rem 0rem 0rem;
-            ul.navbar__logo{
-                li{
+            div.navbar__logo{
                     padding: 0rem 1rem;
-                    list-style-type: none;
                     img{
                         height: 5rem;
                     }
-                }
             }
             ul.navbar__contact--links{
                 @include displayPosition($direction: row, $align-i: flex-end);
