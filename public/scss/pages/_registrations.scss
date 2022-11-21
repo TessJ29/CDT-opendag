@@ -1,0 +1,30 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+@import '../components/buttons';
+
+body{
+    table{
+        @extend %table__styling;
+        @include displayPosition($direction: column, $j-content: center, $align-i: center);
+        tr{
+            th{
+                @include TextStyling($family: $oswald, $size: 36, $weight: 700, $color: $DarkBlue);
+                padding: 2em;
+            }
+        }
+    tbody{
+            td{
+                @include TextStyling($family: $open-sans, $size: 36, $weight: 200, $color: $Black);
+                padding: 2em;
+            }
+    }
+            
+    }
+    button{
+        @include Btn__With--border;
+        margin-bottom: 1em;
+    }
+}
+
+
+

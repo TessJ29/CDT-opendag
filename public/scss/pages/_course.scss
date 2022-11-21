@@ -47,6 +47,7 @@ section.course_section{
 
     section.course_information {
         height: 35vh;
+
         .info {
             position: relative;
             @include displayPosition($direction: normal, $j-content: center, $align-i: center);

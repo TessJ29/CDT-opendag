@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -1280,6 +1281,10 @@ section.register__form div.container form.form div.submit__btn button ion-icon, 
   margin: 0rem 0.2rem;
 }
 
+body table {
+  padding: 2em;
+}
+
 section.login__form {
   display: flex;
   flex-direction: column;
@@ -1484,4 +1489,52 @@ section.about_landing div.grid-container div.grid-item p {
   font-size: 16px;
   font-weight: 400;
   color: #000000;
+}
+
+body table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body table tr th {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 36;
+  font-weight: 700;
+  color: #003C51;
+  padding: 2em;
+}
+body table tbody td {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 36;
+  font-weight: 200;
+  color: #000000;
+  padding: 2em;
+}
+body button {
+  display: flex;
+  flex-direction: normal;
+  justify-content: normal;
+  align-items: center;
+  margin: 0rem 1rem;
+  background-color: #ffffff;
+  border: solid 4px #62E3FF;
+  border-radius: 5rem;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 1em;
+}
+body button a {
+  padding: 0rem 0rem 0rem 0.5rem;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #003C51;
+}
+body button ion-icon {
+  padding: 0rem 0.5rem;
+  font-size: 24px;
+  color: #003C51;
 }/*# sourceMappingURL=main.css.map */
