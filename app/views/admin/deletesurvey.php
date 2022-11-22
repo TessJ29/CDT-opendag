@@ -1,1 +1,8 @@
-<?= $data['deleteStatus'];
+
+
+
+
+<?= $data['deleteStatus'];?>
+
+
+

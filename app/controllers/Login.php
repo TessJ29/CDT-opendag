@@ -1,6 +1,7 @@
 <?php
 require_once APPROOT . '../helpers/session_helper.php';
 ?>
+
 <?php
 class Login extends Controller
 {

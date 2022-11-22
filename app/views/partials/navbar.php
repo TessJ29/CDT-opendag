@@ -1,8 +1,9 @@
+
 <header>
         <nav>
             <div class="top__navbar">
                 <ul class="navbar__logo">
-                    <li><img src="./img/mbologo.png" alt=""></li>
+                    <img src="./img/mbologo.png" alt="">
                 </ul>
                 <div class="navbar__toggle" id="mobile-menu">
                     <span class="bar"></span>
@@ -66,10 +67,27 @@
                     </li>
 
                 </ul>
+                <ul>
+                <?php if(!isset($_SESSION['usersEmail'])) : ?>
                 <button>
-                    <a href="">Enquette</a>
+                    <a href="/register">Register</a>
                     <ion-icon name="arrow-forward-outline"></ion-icon>
                 </button>
+                <button>
+                <a href="/login">Inloggen</a>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                </button>
+                <?php else : ?>
+                    <button>
+                <a href="<?= URLROOT ; ?>/admin">Dashboard</a>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                </button>
+                <button>
+                <a href="<?= URLROOT ; ?>/Login/logout">Logout</a>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                </button>
+                <?php endif; ?>
+                </ul>
             </div>
         </nav>
     </header>
