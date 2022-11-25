@@ -146,7 +146,7 @@ section.course_section{
             @include displayPosition($direction: normal, $j-content: center, $align-i: center);
           }
           .dropdown-menu {
-            position: absolute;
+            position: relative;
             top: 100%;
             display: none;
             max-width: 80%;
