@@ -11,41 +11,24 @@ class Survey extends Controller
 
     public function index()
     {
-        $result = $this->surveyModel->getQuestions();
-
-        $row = '';
-        $button = '';
-        $i = 0;
-        foreach ($result as $questions) {
-            // var_dump($questions);
-            $i++;
-
-            $row = $questions->Question;
-
-            $button = "<div class='buttons'>
-                        <input type='submit' class='btn' data-set-step='3' value='Volgende'>
-                       </div>
-            ";
-        }
-
-
-        $data = [
-            'Question' => $row
-        ];
-
-        $this->view('Survey', $data);
+        $this->view('Survey');
     }
 
     public function create()
     {
+        // var_dump($_POST);
+        // var_dump($_SERVER);
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             try {
-                $_POST = FILTER_INPUT_ARRAY(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
                 $this->surveyModel->createAnswer($_POST);
+                header("Location:" . URLROOT . "/index");
+
 
             } catch (PDOException $e) {
                 echo "Het inserten van het record is niet gelukt";
+                header("Location:" . URLROOT . "/survey");
+
             }
 
             $this->view('Survey');
