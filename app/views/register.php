@@ -1,5 +1,5 @@
 <?php
-    require_once APPROOT . '../helpers/session_helper.php';
+    //require_once APPROOT . '../helpers/session_helper.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

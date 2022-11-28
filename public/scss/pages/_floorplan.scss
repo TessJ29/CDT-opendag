@@ -4,8 +4,10 @@
 
 body{
     section{
+        width: 100%;
         @include displayPosition($direction: row, $j-content: center, $align-i: center);
         div{
+            width: 80%;
             @include displayPosition($direction: row, $j-content: center, $align-i: center);
             div.floorplan__info{
                 @include displayPosition($direction: column, $j-content: center, $align-i: center);
@@ -20,11 +22,15 @@ body{
                     @include Btn__With--border;  
                 }
             }
-            // div.floorplan__img{
-            //     img{
-
-            //     }
-            // }
+            div.floorplan__img{
+                svg{
+                    // height: 10rem;
+                    // width: 10rem;
+                    text.Workshop__Btn{
+                        padding: 1rem;
+                    }
+                }
+            }
         }
     }
 }
