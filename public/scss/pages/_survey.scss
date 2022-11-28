@@ -26,10 +26,6 @@ section.banner {
     @include TextStyling(  $family: $oswald, $size: 24px, $weight: 400, $color: $DarkBlue);
     margin: 0;
     padding: 35px 25px 25px 25px;
-    i {
-      padding-right: 10px;
-      font-size: 24px;
-    }
   }
   p,
   div.text {
@@ -40,15 +36,6 @@ section.banner {
   .fields {
     position: relative;
     padding: 20px;
-    .wrapper {
-      @include displayPosition($j-content: space-between);
-      > div {
-        width: 100%;
-      }
-      .gap {
-        width: 35px;
-      }
-    }
     h4 {
       @include TextStyling($family: $open-sans, $size: 16px, $weight: 400, $color: $DarkBlue);
     }
@@ -56,38 +43,9 @@ section.banner {
       @include TextStyling( $family: $open-sans, $size: 16px, $weight: 400, $color: $DarkBlue);
     }
   }
-  select {
-    appearance: none;
-    background-image: linear-gradient(45deg, transparent 50%, #c7c9cb 50%),
-      linear-gradient(135deg, #c7c9cb 50%, transparent 50%),
-      linear-gradient(to right, #dfe0e0, #dfe0e0);
-    background-position: calc(100% - 20px) 20px, calc(100% - 15px) 20px,
-      calc(100% - 40px) 10px;
-    background-size: 5px 5px, 5px 5px, 1px 25px;
-    background-repeat: no-repeat;
-    display: flex;
-    margin-top: 10px;
-    padding: 15px;
-    border: 1px solid #dfe0e0;
-    width: 100%;
-    flex-basis: 100%;
-    height: 47px;
-    option {
-      &:first-child {
-        display: none;
-      }
-    }
-    &:focus {
-      border: 1px solid #c6c7c7;
-    }
-    &:invalid {
-      color: #858688;
-    }
-  }
   .buttons {
     @include displayPosition( $direction: row, $j-content: space-between, $align-i: normal);
     padding: 20px;
-    border-top: 1px solid #eceff2;
   }
   .btn {
     display: inline-block;
@@ -113,31 +71,11 @@ section.banner {
       color: $LightBlue;
     }
   }
-  .field {
-    display: inline-flex;
-    position: relative;
-    width: 100%;
-    padding-bottom: 20px;
-    i {
-      position: absolute;
-      color: $White;
-      top: 25px;
-      left: 15px;
-      z-index: 10;
-      ~ {
-        input {
-          padding-left: 45px !important;
-        }
-      }
-    }
-  }
+
   label {
     @include TextStyling($size: 16px, $weight: 600, $color: $AmberGrey);
   }
-  .responses {
-    padding: 15px;
-    margin: 0;
-  }
+
   .steps {
     position: relative;
     @include displayPosition($j-content: space-between);
@@ -258,58 +196,6 @@ section.banner {
     font-size: 14px;
     color: $LightGrey;
     padding: 15px 0 25px;
-  }
-  .group {
-    @include displayPosition( $j-content: center);
-    flex-flow: column;
-    padding-bottom: 15px;
-    label {
-    @include displayPosition( $align-i: center);
-      font-weight: 500;
-      height: 25px;
-      padding-bottom: 5px;
-    }
-    input[type="radio"] {
-      appearance: none;
-      display: inline-flex;
-      cursor: pointer;
-      width: 16px;
-      height: 16px;
-      padding: 2px;
-      background-clip: content-box;
-      border: 1px solid #dfe0e0;
-      background-color: #eef1f1;
-      border-radius: 50%;
-      margin-right: 10px;
-      &:hover {
-        border: 1px solid #d2d3d3;
-      }
-      &:checked {
-        border: 1px solid #d2d3d3;
-        background-color: #2996ed;
-      }
-    }
-    input[type="checkbox"] {
-      appearance: none;
-      display: inline-flex;
-      cursor: pointer;
-      width: 16px;
-      height: 16px;
-      padding: 2px;
-      background-clip: content-box;
-      border: 1px solid #dfe0e0;
-      background-color: #eef1f1;
-      border-radius: 50%;
-      margin-right: 10px;
-      border-radius: 0;
-      &:hover {
-        border: 1px solid #d2d3d3;
-      }
-      &:checked {
-        border: 1px solid #d2d3d3;
-        background-color: #2996ed;
-      }
-    }
   }
   .step-content {
     display: none;
