@@ -424,7 +424,10 @@ section.course_section div.cards {
   justify-content: center;
   align-items: center;
 }
-section.course_section div.cards div.card1, section.course_section div.cards div.card2, section.course_section div.cards div.card3, section.course_section div.cards div.card4 {
+section.course_section div.cards div.card1,
+section.course_section div.cards div.card2,
+section.course_section div.cards div.card3,
+section.course_section div.cards div.card4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -434,36 +437,54 @@ section.course_section div.cards div.card1, section.course_section div.cards div
   padding: 0rem 1rem;
   list-style-type: none;
 }
-section.course_section div.cards div.card1 ion-icon, section.course_section div.cards div.card2 ion-icon, section.course_section div.cards div.card3 ion-icon, section.course_section div.cards div.card4 ion-icon {
-  color: #62E3FF;
+section.course_section div.cards div.card1 ion-icon,
+section.course_section div.cards div.card2 ion-icon,
+section.course_section div.cards div.card3 ion-icon,
+section.course_section div.cards div.card4 ion-icon {
+  color: #62e3ff;
 }
-section.course_section div.card1, section.course_section div.card2, section.course_section div.card3, section.course_section div.card4 {
+section.course_section div.card1,
+section.course_section div.card2,
+section.course_section div.card3,
+section.course_section div.card4 {
   margin: 0;
 }
-section.course_section div.card1 div.cardtitle1, section.course_section div.card2 div.cardtitle1, section.course_section div.card3 div.cardtitle1, section.course_section div.card4 div.cardtitle1 {
+section.course_section div.card1 div.cardtitle1,
+section.course_section div.card2 div.cardtitle1,
+section.course_section div.card3 div.cardtitle1,
+section.course_section div.card4 div.cardtitle1 {
   text-decoration: none;
-  font-family: normal;
+  font-family: "Oswald", sans-serif;
   font-size: 36px;
-  font-weight: 400;
-  color: black;
-  padding-bottom: 3rem;
+  font-weight: 700;
+  color: #003C51;
+  padding-bottom: 3.09rem;
   text-align: center;
 }
-section.course_section div.card1 div.cardtitle2, section.course_section div.card2 div.cardtitle2, section.course_section div.card3 div.cardtitle2, section.course_section div.card4 div.cardtitle2 {
+section.course_section div.card1 div.cardtitle2,
+section.course_section div.card2 div.cardtitle2,
+section.course_section div.card3 div.cardtitle2,
+section.course_section div.card4 div.cardtitle2 {
   text-decoration: none;
-  font-family: normal;
+  font-family: "Oswald", sans-serif;
   font-size: 36px;
-  font-weight: 400;
-  color: black;
-  padding-bottom: 0.35rem;
+  font-weight: 700;
+  color: #003C51;
+  padding-bottom: 0.2rem;
   text-align: center;
 }
-section.course_section div.card1 div.line, section.course_section div.card2 div.line, section.course_section div.card3 div.line, section.course_section div.card4 div.line {
+section.course_section div.card1 div.line,
+section.course_section div.card2 div.line,
+section.course_section div.card3 div.line,
+section.course_section div.card4 div.line {
   background-color: #868686;
   width: 100%;
   height: 2px;
 }
-section.course_section div.card1 button, section.course_section div.card2 button, section.course_section div.card3 button, section.course_section div.card4 button {
+section.course_section div.card1 button,
+section.course_section div.card2 button,
+section.course_section div.card3 button,
+section.course_section div.card4 button {
   display: flex;
   flex-direction: normal;
   justify-content: normal;
@@ -472,7 +493,10 @@ section.course_section div.card1 button, section.course_section div.card2 button
   border: none;
   background-color: #ffffff;
 }
-section.course_section div.card1 button a, section.course_section div.card2 button a, section.course_section div.card3 button a, section.course_section div.card4 button a {
+section.course_section div.card1 button a,
+section.course_section div.card2 button a,
+section.course_section div.card3 button a,
+section.course_section div.card4 button a {
   text-decoration: none;
   font-family: "Oswald", sans-serif;
   font-size: 20px;
@@ -480,14 +504,17 @@ section.course_section div.card1 button a, section.course_section div.card2 butt
   color: #62E3FF;
   letter-spacing: 2px;
 }
-section.course_section div.card1 button ion-icon, section.course_section div.card2 button ion-icon, section.course_section div.card3 button ion-icon, section.course_section div.card4 button ion-icon {
+section.course_section div.card1 button ion-icon,
+section.course_section div.card2 button ion-icon,
+section.course_section div.card3 button ion-icon,
+section.course_section div.card4 button ion-icon {
   padding: 0.2rem 0.5rem 0rem 0.5rem;
   font-size: 20px;
   color: #62E3FF;
 }
 
 section.course_information {
-  height: 35vh;
+  height: 40vh;
 }
 section.course_information .info {
   position: relative;
@@ -520,7 +547,7 @@ section.course_information div.content-left {
   float: left;
 }
 section.course_information div.content-left ion-icon {
-  color: #62E3FF;
+  color: #62e3ff;
   font-size: 64px;
 }
 section.course_information div.content-right {
@@ -531,7 +558,19 @@ section.course_information div.content-right {
   justify-content: center;
   align-items: normal;
 }
+section.course_information div.content-right h3 {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: black;
+}
 section.course_information div.content-right p {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
   margin-top: 25px;
 }
 section.course_information .d-block {
@@ -1327,6 +1366,7 @@ section.banner div.banner h5 {
   width: 500px;
   margin: 1.5rem auto;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 .survey-form h1 {
   box-sizing: border-box;
@@ -1337,27 +1377,20 @@ section.banner div.banner h5 {
   color: #003C51;
   margin: 0;
   padding: 35px 25px 25px 25px;
-  font-size: 20px;
-  color: #6a737f;
-  font-weight: 600;
 }
-.survey-form h1 i {
-  padding-right: 10px;
+.survey-form p,
+.survey-form div.text {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
+  font-weight: 400;
+  color: #003C51;
+  padding: 1rem;
+  text-align: center;
 }
 .survey-form .fields {
   position: relative;
   padding: 20px;
-}
-.survey-form .fields .wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-.survey-form .fields .wrapper > div {
-  width: 100%;
-}
-.survey-form .fields .wrapper .gap {
-  width: 35px;
 }
 .survey-form .fields h4 {
   text-decoration: none;
@@ -1373,75 +1406,40 @@ section.banner div.banner h5 {
   font-weight: 400;
   color: #003C51;
 }
-.survey-form select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-image: linear-gradient(45deg, transparent 50%, #c7c9cb 50%), linear-gradient(135deg, #c7c9cb 50%, transparent 50%), linear-gradient(to right, #dfe0e0, #dfe0e0);
-  background-position: calc(100% - 20px) 20px, calc(100% - 15px) 20px, calc(100% - 40px) 10px;
-  background-size: 5px 5px, 5px 5px, 1px 25px;
-  background-repeat: no-repeat;
-  display: flex;
-  margin-top: 10px;
-  padding: 15px;
-  border: 1px solid #dfe0e0;
-  width: 100%;
-  flex-basis: 100%;
-  height: 47px;
-}
-.survey-form select option:first-child {
-  display: none;
-}
-.survey-form select:focus {
-  border: 1px solid #c6c7c7;
-}
-.survey-form select:invalid {
-  color: #858688;
-}
 .survey-form .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: normal;
   padding: 20px;
-  border-top: 1px solid #eceff2;
 }
 .survey-form .btn {
   display: inline-block;
   padding: 10px 20px;
-  border: 0;
   background-color: #49A8BD;
-  font-weight: bold;
-  color: #fff;
+  text-decoration: none;
+  font-family: normal;
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+  color: #ffffff;
   cursor: pointer;
   border-radius: 25px;
   margin-right: 5px;
   text-decoration: none;
-  font-size: 14px;
 }
 .survey-form .btn:hover {
   background-color: #62E3FF;
 }
-.survey-form .btn.alt {
+.survey-form input {
   background-color: transparent;
+  padding: 0rem 1rem;
   border: 1px solid #49A8BD;
   color: #49A8BD;
 }
-.survey-form .btn.alt:hover {
+.survey-form input:hover {
   border: 1px solid #62E3FF;
   color: #62E3FF;
-}
-.survey-form .field {
-  display: inline-flex;
-  position: relative;
-  width: 100%;
-  padding-bottom: 20px;
-}
-.survey-form .field i {
-  position: absolute;
-  color: #dfe2e5;
-  top: 25px;
-  left: 15px;
-  z-index: 10;
-}
-.survey-form .field i ~ input {
-  padding-left: 45px !important;
 }
 .survey-form label {
   text-decoration: none;
@@ -1449,10 +1447,6 @@ section.banner div.banner h5 {
   font-size: 16px;
   font-weight: 600;
   color: #868686;
-}
-.survey-form .responses {
-  padding: 15px;
-  margin: 0;
 }
 .survey-form .steps {
   position: relative;
@@ -1468,11 +1462,9 @@ section.banner div.banner h5 {
 .survey-form .steps::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 4px;
-  background-color: #f2f4f7;
+  background-color: #ABB8C3;
   margin: auto 0;
   top: 0;
   bottom: 0;
@@ -1481,8 +1473,8 @@ section.banner div.banner h5 {
 .survey-form .steps .step {
   width: 25px;
   height: 25px;
-  background-color: #f2f4f7;
-  border: 3px solid #f2f4f7;
+  background-color: #ffffff;
+  border: 3px solid #C7C7C7;
   border-radius: 50px;
   z-index: 1;
 }
@@ -1494,7 +1486,9 @@ section.banner div.banner h5 {
 }
 .survey-form .rating {
   display: flex;
+  flex-direction: normal;
   justify-content: space-between;
+  align-items: normal;
   padding: 5px 0;
 }
 .survey-form .rating input[type=radio]:checked {
@@ -1503,34 +1497,31 @@ section.banner div.banner h5 {
 }
 .survey-form .rating input[type=radio]:checked + label {
   display: flex;
-  position: relative;
-  font-size: 14px;
+  flex-direction: normal;
   justify-content: center;
   align-items: center;
+  position: relative;
+  font-size: 14px;
   width: 31px;
   height: 31px;
   cursor: pointer;
-  color: #8e939b;
+  color: #868686;
   z-index: 10;
-  color: #fff;
+  color: #ffffff;
 }
 .survey-form .rating input[type=radio]:checked + label:before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
   width: 30px;
   height: 30px;
   border: 1px solid #49A8BD;
   border-radius: 100%;
-  background: #fff;
+  background: #ffffff;
   z-index: -1;
 }
 .survey-form .rating input[type=radio]:checked + label:after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
   width: 31px;
   height: 31px;
   border-radius: 100%;
@@ -1567,7 +1558,7 @@ section.banner div.banner h5 {
   height: 30px;
   border: 1px solid #dfe0e0;
   border-radius: 100%;
-  background: #fff;
+  background: #ffffff;
   z-index: -1;
 }
 .survey-form .rating input[type=radio]:not(:checked) + label:after {
@@ -1584,81 +1575,16 @@ section.banner div.banner h5 {
 }
 .survey-form .rating-footer {
   display: flex;
+  flex-direction: normal;
   justify-content: space-between;
+  align-items: normal;
   font-size: 14px;
-  color: #8e939b;
+  color: #ABB8C3;
   padding: 15px 0 25px;
-}
-.survey-form .group {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  padding-bottom: 15px;
-}
-.survey-form .group label {
-  display: flex;
-  font-weight: 500;
-  height: 25px;
-  align-items: center;
-  padding-bottom: 5px;
-}
-.survey-form .group input[type=radio] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  display: inline-flex;
-  cursor: pointer;
-  width: 16px;
-  height: 16px;
-  padding: 2px;
-  background-clip: content-box;
-  border: 1px solid #dfe0e0;
-  background-color: #eef1f1;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-.survey-form .group input[type=radio]:hover {
-  border: 1px solid #d2d3d3;
-}
-.survey-form .group input[type=radio]:checked {
-  border: 1px solid #d2d3d3;
-  background-color: #2996ed;
-}
-.survey-form .group input[type=checkbox] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  display: inline-flex;
-  cursor: pointer;
-  width: 16px;
-  height: 16px;
-  padding: 2px;
-  background-clip: content-box;
-  border: 1px solid #dfe0e0;
-  background-color: #eef1f1;
-  border-radius: 50%;
-  margin-right: 10px;
-  border-radius: 0;
-}
-.survey-form .group input[type=checkbox]:hover {
-  border: 1px solid #d2d3d3;
-}
-.survey-form .group input[type=checkbox]:checked {
-  border: 1px solid #d2d3d3;
-  background-color: #2996ed;
 }
 .survey-form .step-content {
   display: none;
 }
 .survey-form .step-content.current {
   display: block;
-}
-.survey-form .result {
-  padding: 25px;
-}
-.survey-form .result h3 {
-  color: #6a737f;
-}
-.survey-form .result p {
-  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */
