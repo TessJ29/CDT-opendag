@@ -7,8 +7,12 @@ section.course_section{
     width: 100%;
     @include displayPosition($direction: column, $j-content: center, $align-i: center);
     div.cards {
+        @media screen and (max-width: 800px) {
+            width: 200%;
+            @include displayPosition($direction: column, $j-content: center, $align-i: center);
+        }
         margin: 0%;
-        padding: 0%;    
+        padding: 0%; 
         @include displayPosition($direction: row, $j-content: center, $align-i: center);
         div.card1, div.card2, div.card3, div.card4 {
             @include displayPosition($direction: column, $j-content: center, $align-i: center);
@@ -47,12 +51,18 @@ section.course_section{
 
     section.course_information {
         height: 35vh;
+            
         .info {
             position: relative;
             @include displayPosition($direction: normal, $j-content: center, $align-i: center);
+            @media  screen and (max-width: 800px) {
+                width: 100%;
+                
+
+            }
           }
           .dropdown-menu {
-            position: absolute;
+            position: relative;
             top: 100%;
             display: none;
             max-width: 80%;
@@ -72,22 +82,31 @@ section.course_section{
             ion-icon {
                 color: #62E3FF;
                 font-size: 64px;
+                max-width: 100%;
             }
           }
           div.content-right {
             max-width: 90%;
             float: right;
             @include displayPosition($direction: column, $j-content: center, $align-i: normal);
+            @media  screen and (max-width:  800px) {
+                width: 100%;
+                @include displayPosition($direction: column, $j-content: center, $align-i: normal);
+            }
             p {
                 margin-top: 25px;
             }
+            
           }
           
           .d-block {
             display: block
           }
+        
     }
 
 
 
 .show {display:block;}
+
+
