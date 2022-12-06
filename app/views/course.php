@@ -149,51 +149,8 @@
     <?php $this->view("partials/footer"); ?>
     
     <!-- Javascripts -->
-    <script src="./js/script.js"></script>
+    <script src="../../public/js/script.js"></script>
 
-    <script>
-        // Rotate arrow when clicked on -- Not finished
-        // let rotation = 0;
-        // function rotateIcon() {
-        //   rotation += 90; // add 90 degrees, you can change this as you want
-        //   if (rotation === 90) { 
-        //     // 360 means rotate back to 0
-        //     rotation = 0;
-        //   }
-        //         document.querySelector("#rotated-icon").style.transform = "rotate(90deg)";
-        //     }
-
-        // Dropdown
-        // let show = id => {
-        //     let dropElement = document.getElementById(id);
-        //     if (dropElement.style.display === "none") {
-        //         dropElement.style.display = "block";
-        //     } else {
-        //         dropElement.style.display = "none";
-        //     }
-        // }
-        var list = document.querySelectorAll("[data-toggle=dropdown]");
-        for (var i = 0, s = list.length; i < s; i++) {
-            var elm = list[i];
-            elm.addEventListener("click", function() {
-                // this for loop will hide previously clicked drop downs
-                for (var j = 0, z = list.length; j < z; j++) {
-                    if (list[j] != this) {
-                        var elm = document.querySelector(list[j].getAttribute("data-target"));
-                        var str = elm.className.replace("d-block");
-                        elm.className = str;
-                    }
-                } // if you like, remove the above loop
-                var obj = document.querySelector(this.getAttribute("data-target"));
-                if (obj.className.indexOf("d-block") > 0) {
-                    var temp = obj.className.replace("d-block", "");
-                    obj.className = temp;
-                } else {
-                    obj.className += " d-block";
-                }
-            });
-        }
-    </script>
     <!-- Icon Javascripts -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
