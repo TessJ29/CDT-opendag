@@ -14,7 +14,7 @@ class Register extends Controller
     public function index()
     {
 
-        $this->view("register");
+        $this->view("register2");
     }
 
     /*public function create()

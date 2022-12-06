@@ -12,8 +12,9 @@ class Login extends Controller
 
     public function index()
     {
-        $this->view("login");
+        $this->view("login2");
     }
+
     /*public function login()
     {
         $this->registerModel->loginRegister();

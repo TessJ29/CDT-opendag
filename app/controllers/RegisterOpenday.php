@@ -21,6 +21,7 @@
 
             }
             $this->view("register_openday/index");
+                
         }
     }
 ?>
