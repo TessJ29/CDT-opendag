@@ -43,9 +43,7 @@
         <div class="step-content" data-step="2">
             <form class="survey-form" action="<?= URLROOT ?>/survey/create" method="post">
                 <div class="fields">
-                    <label for="Answer">
-                        <p>Hoe heeft u de open dag ervaren?</p>
-                    </label>
+                    <p>Hoe heeft u de open dag ervaren?</p>
                     <div class="rating">
                         <input type="radio" name="Answer" id="radio1" value="1">
                         <label for="radio1">1</label>
@@ -178,6 +176,9 @@
             <div class="text">
                 <h4>Dit is het einde van de vragenlijst.</h4>
                 <h5>Als u klaar bent met het invullen van het formulier, druk dan op versturen</h5>
+                <?=var_dump($data);?>
+                <div class="QuestionError"><?= $data['QuestionError']; ?></div>
+
             </div>
             <div class="buttons">
                 <a href="#" class="btn" data-set-step="6">Vorige</a>

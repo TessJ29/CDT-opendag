@@ -891,7 +891,7 @@ section.cards_section div.cards div.title {
   align-items: center;
 }
 section.cards_section div.cards div.title ion-icon {
-  color: #62E3FF;
+  color: #62e3ff;
   font-size: 64px;
   padding-bottom: 0.5rem;
 }
@@ -903,7 +903,9 @@ section.cards_section div.cards div.title h2 {
   color: #003C51;
   padding-bottom: 0.5rem;
 }
-section.cards_section div.cards div.card-call p, section.cards_section div.cards div.card-location p, section.cards_section div.cards div.card-time p {
+section.cards_section div.cards div.card-call p,
+section.cards_section div.cards div.card-location p,
+section.cards_section div.cards div.card-time p {
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -1030,7 +1032,7 @@ section.contact_form div.background_contactform div.circles div.circle-2 {
   display: block;
   transform: translate(-50%, -50%);
   border-radius: 50rem;
-  background-color: #DAF7FD;
+  background-color: #daf7fd;
   width: 360px;
   height: 360px;
   top: 80rem;
@@ -1082,7 +1084,7 @@ section.contact_form div.background_contactform div.circles div.circle-5 {
   top: 85rem;
   left: 8rem;
   z-index: -1;
-  stroke: #62E3FF;
+  stroke: #62e3ff;
   box-shadow: inset 0px 4px 67px 0px rgba(0, 0, 0, 0.2745098039);
 }
 section.contact_form div.background_contactform div.circles div.circle-6 {
@@ -1097,7 +1099,7 @@ section.contact_form div.background_contactform div.circles div.circle-6 {
   top: 70.5rem;
   left: -1rem;
   z-index: -1;
-  stroke: #DAF7FD;
+  stroke: #daf7fd;
   box-shadow: inset 0px 4px 67px 0px rgba(0, 0, 0, 0.2745098039);
 }
 section.contact_form div.background_contactform div.circles div.circle-7 {
@@ -1340,25 +1342,25 @@ section.banner div.banner {
   width: 100%;
   height: 20%;
   padding: 2rem;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #49A8BD;
 }
 section.banner div.banner h1 {
   text-decoration: none;
   font-family: "Oswald", sans-serif;
   font-size: 64px;
   font-weight: 600;
-  color: #ffffff;
+  color: #003C51;
 }
 section.banner div.banner h5 {
   text-decoration: none;
   font-family: "Oswald", sans-serif;
   font-size: 32px;
   font-weight: 400;
-  color: #ffffff;
+  color: #003C51;
 }
 
 .survey-form {
@@ -1367,6 +1369,10 @@ section.banner div.banner h5 {
   margin: 1.5rem auto;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
   text-align: center;
+}
+.survey-form form.survey-form {
+  margin-top: 0;
+  box-shadow: none;
 }
 .survey-form h1 {
   box-sizing: border-box;
