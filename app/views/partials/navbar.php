@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <header>
     <nav>
         <div class="top__navbar">
@@ -69,14 +71,20 @@
 
             </ul>
             <ul>
-                <button>
-                    <a href="/register">Registreren</a>
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                </button>
-                <button>
-                    <a href="/login">Inloggen</a>
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                </button>
+                <?php if(!isset($_SESSION["data"])) : ?>
+                    <button>
+                        <a href="/authentication/register">Registreren</a>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </button>
+                    <button>
+                        <a href="/authentication/login">Inloggen</a>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </button>
+                <?php else : ?>
+                    <button>
+                        <a href=""><?= $_SESSION["data"]["firstname"] ?></a>
+                    </button>
+                <?php endif; ?>
             </ul>
         </div>
     </nav>
