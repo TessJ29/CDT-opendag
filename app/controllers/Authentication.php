@@ -21,7 +21,9 @@
                 "wrong-credentials" => "Je hebt foute gegevens gebruikt om in te loggen.",
                 "success-login" => "Inloggen is gelukt!",
                 "success-register" => "Account is aangemaakt, je kunt nu inloggen.",
-                "already-exists" => "Er is al een account aangemaakt met dit mailadress."
+                "already-exists" => "Er is al een account aangemaakt met dit mailadress.",
+                "not-logged-in" => "Je moet voor deze pagina ingelogd zijn",
+                "permission" => "Je hebt geen toegang tot deze pagina"
             };
             $this->view("authentication/message", $message);
         }
