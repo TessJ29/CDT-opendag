@@ -15,7 +15,7 @@
         <?php $this->view("partials/navbar"); ?>
 
         <!-- Content -->
-        <section>
+        <section class="floorplan">
             <div>
                 <div class="floorplan__info">
                     <h2>Workshop titel</h2>

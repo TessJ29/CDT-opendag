@@ -2,4 +2,4 @@
     echo $data;
 ?>
 
-<?php header("refresh: 2;url=http://cdt-opendag.nl/"); ?>
+<?php header("refresh: 2;url=" . URLROOT); ?>

@@ -8,7 +8,7 @@ section.login__form{
         @include displayPosition($direction: column, $align-i: center);
         form.form{
             @extend %form__styling;
-            width: 30rem;
+            width: 35rem;
             div{
                 width: 100%;
                 @include displayPosition($direction: column, $align-i: flex-start);
@@ -46,30 +46,29 @@ section.register__form{
     div.container{
         @include displayPosition($direction: column, $align-i: center);
         form.form{
+            @include displayPosition($direction: row,);
             @extend %form__styling;
             width: 70rem;
-            div.input__forms{
-                width: 100%;
-                @include displayPosition($direction: row, $j-content: space-evenly, $align-i: center);
-                div{
-                    width: 40%;
-                    @include displayPosition($direction: column, $align-i: flex-start);
-                    label{
-                        @include TextStyling($family: $oswald, $size: 36px, $weight: 700, $color: $DarkBlue);
+                div.input__forms{
+                    width: 50%;
+                    div{
+                        width: 40%;
+                        label{
+                            @include TextStyling($family: $oswald, $size: 28px, $weight: 700, $color: $DarkBlue);
+                        }
+                    }
+                    input{
+                        @extend %input__styling;
+                    }
+                    div.submit__btn{
+                        width: 90%;
+                        margin: 3rem 5rem 0rem 0rem;
+                        @include displayPosition($direction: column, $j-content: center, $align-i: flex-end);
+                        button{
+                            @extend %form__btn;
+                        }
                     }
                 }
-                input{
-                    @extend %input__styling;
-                }
-            }
-            div.submit__btn{
-                width: 100%;
-                margin: 3rem 0rem 0rem 0rem;
-                @include displayPosition($direction: column, $j-content: center, $align-i: flex-end);
-                button{
-                    @extend %form__btn;
-                }
-            }
         }
         div.circle-1{
             @include CircleStyling($color: $LightBlue, $size: 300px, $top: 75%, $left: 80%);
