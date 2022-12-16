@@ -1,112 +1,148 @@
-@import'../components/buttons';
+@import "../components/buttons";
 // Banner / image */
 
-
 // Cards
-section.course_section{
-    width: 100%;
-    @include displayPosition($direction: column, $j-content: center, $align-i: center);
-    div.cards {
-        @media screen and (max-width: 800px) {
-            width: 200%;
-            @include displayPosition($direction: column, $j-content: center, $align-i: center);
-        }
-        margin: 0%;
-        padding: 0%; 
-        @include displayPosition($direction: row, $j-content: center, $align-i: center);
-        div.card1, div.card2, div.card3, div.card4 {
-            @include displayPosition($direction: column, $j-content: center, $align-i: center);
-            width: 25%;
-            height: 50%;
-            padding: 0rem 1rem;
-            list-style-type: none;
-            // Icons
-            ion-icon {
-                color: #62E3FF;
-            }
-        }
+section.course_section {
+  width: 100%;
+  @include displayPosition(
+    $direction: column,
+    $j-content: center,
+    $align-i: center
+  );
+  div.cards {
+    margin: 0%;
+    padding: 0%;
+    @include displayPosition(
+      $direction: row,
+      $j-content: center,
+      $align-i: center
+    );
+    div.card1,
+    div.card2,
+    div.card3,
+    div.card4 {
+      @include displayPosition(
+        $direction: column,
+        $j-content: center,
+        $align-i: center
+      );
+      width: 25%;
+      height: 50%;
+      padding: 0rem 1rem;
+      list-style-type: none;
+      // Icons
+      ion-icon {
+        color: #62e3ff;
+      }
     }
-        div.card1, div.card2, div.card3, div.card4 {
-            margin: 0;
-            div.cardtitle1 {
-                @include TextStyling($family: normal, $size: 36px, $weight: 400, $color: black);
-                padding-bottom: 3rem;
-                text-align: center;
-            }
-            div.cardtitle2 {
-                @include TextStyling($family: normal, $size: 36px, $weight: 400, $color: black);
-                padding-bottom: .35rem;
-                text-align: center;
-            }
-            div.line {
-                background-color: $AmberGrey;
-                width: 100%;
-                height: 2px;
-            }
-            button {
-                @include Btn__Without--border;
-              }
-        }
-    } 
-
-    section.course_information {
-        height: 35vh;
-            
-        .info {
-            position: relative;
-            @include displayPosition($direction: normal, $j-content: center, $align-i: center);
-            @media  screen and (max-width: 800px) {
-                width: 100%;
-                
-
-            }
-          }
-          .dropdown-menu {
-            position: relative;
-            top: 100%;
-            display: none;
-            max-width: 80%;
-            padding: 1rem 2rem;
-            margin: 2rem 0 0;
-            @include TextStyling($family: normal, $size: 16px, $weight: 400, $color: black);
-            text-align: left;
-            background: #f8f9fa;
-            border-radius: 0.25rem;
-            border: 1px solid $AmberGrey; 
-            z-index: 1;
-            box-shadow: 0 0.1875rem 0.375rem rgba(0, 0, 0, 0.16), 0 0.1875rem 0.375rem rgba(0, 0, 0, 0.23);
-          }
-          div.content-left {
-            max-width: 10%;
-            float: left;
-            ion-icon {
-                color: #62E3FF;
-                font-size: 64px;
-                max-width: 100%;
-            }
-          }
-          div.content-right {
-            max-width: 90%;
-            float: right;
-            @include displayPosition($direction: column, $j-content: center, $align-i: normal);
-            @media  screen and (max-width:  800px) {
-                width: 100%;
-                @include displayPosition($direction: column, $j-content: center, $align-i: normal);
-            }
-            p {
-                margin-top: 25px;
-            }
-            
-          }
-          
-          .d-block {
-            display: block
-          }
-        
+  }
+  div.card1,
+  div.card2,
+  div.card3,
+  div.card4 {
+    margin: 0;
+    div.cardtitle1 {
+      @include TextStyling(
+        $family: $oswald,
+        $size: 36px,
+        $weight: 700,
+        $color: $DarkBlue
+      );
+      padding-bottom: 3.09rem;
+      text-align: center;
     }
+    div.cardtitle2 {
+      @include TextStyling(
+        $family: $oswald,
+        $size: 36px,
+        $weight: 700,
+        $color: $DarkBlue
+      );
+      padding-bottom: 0.2rem;
+      text-align: center;
+    }
+    div.line {
+      background-color: $AmberGrey;
+      width: 100%;
+      height: 2px;
+    }
+    button {
+      @include Btn__Without--border;
+    }
+  }
+}
 
+section.course_information {
+  height: 40vh;
+  .info {
+    position: relative;
+    @include displayPosition(
+      $direction: normal,
+      $j-content: center,
+      $align-i: center
+    );
+  }
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    display: none;
+    max-width: 80%;
+    padding: 1rem 2rem;
+    margin: 2rem 0 0;
+    @include TextStyling(
+      $family: normal,
+      $size: 16px,
+      $weight: 400,
+      $color: black
+    );
+    text-align: left;
+    background: #f8f9fa;
+    border-radius: 0.25rem;
+    border: 1px solid $AmberGrey;
+    z-index: 1;
+    box-shadow: 0 0.1875rem 0.375rem rgba(0, 0, 0, 0.16),
+      0 0.1875rem 0.375rem rgba(0, 0, 0, 0.23);
+  }
+  div.content-left {
+    max-width: 10%;
+    float: left;
+    ion-icon {
+      color: #62e3ff;
+      font-size: 64px;
+    }
+  }
+  div.content-right {
+    max-width: 90%;
+    float: right;
+    @include displayPosition(
+      $direction: column,
+      $j-content: center,
+      $align-i: normal
+    );
+    h3 {
+      @include TextStyling(
+        $family: $open-sans,
+        $size: 22px,
+        $weight: 700,
+        $color: black
+      );
+    }
+    p {
+      @include TextStyling(
+        $family: $open-sans,
+        $size: 16px,
+        $weight: 400,
+        $color: black
+      );
+      margin-top: 25px;
+    }
+  }
 
+  .d-block {
+    display: block;
+  }
+}
 
-.show {display:block;}
-
-
+.show {
+  display: block;
+}
