@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Standard meta-tags -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MBO Utrecht</title>
-        <!-- stylesheet links -->
-        <link rel="stylesheet" href="./scss/main.css">
-    </head>
-    <body>
 
-        <!-- Navigation bar -->
-        <?php $this->view("partials/navbar"); ?>
+<head>
+    <!-- Standard meta-tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBO Utrecht</title>
+    <!-- stylesheet links -->
+    <link rel="stylesheet" href="./scss/main.css">
+</head>
 
-        <!-- Content -->
-        <section>
-            <div>
-                <div class="floorplan__info">
-                    <h2 id="workshopTitle">Workshop titel</h2>
-                    <p id="workshopInfo">Workshop informatie.</p>
-                    <button>
-                        <a href="">Inschrijven voor workshop</a>
-                        <ion-icon name="arrow-forward-outline"></ion-icon>
-                    </button>
-                </div>
-                <div class="floorplan__img">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	                    viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
-                        <g>
-                            <path style="fill:#C2C2C2;" d="M873.73,489.48c0,68.91,0,137.33,0,206.21c-3.77,0.24-7,0.44-10.08,0.64
+<body>
+
+    <!-- Navigation bar -->
+    <?php $this->view("partials/navbar"); ?>
+
+    <!-- Content -->
+    <section>
+        <div>
+            <div class="floorplan__info" style="margin-right: 12em;">
+                <h2 id=" workshopTitle">Workshop 1</h2>
+                <h3>3.23</h3>
+                <p id="workshopInfo">Bouw je eigen website</p>
+                <h2 id=" workshopTitle">Workshop 2</h2>
+                <h3>3.26</h3>
+                <p id="workshopInfo">Maak je eigen kleding stuk</p>
+                <h2 id=" workshopTitle">Workshop 3</h2>
+                <h3>3.27</h3>
+                <p id="workshopInfo">Een 2d rpg game maken</p>
+                <button>
+                    <a href="">Inschrijven voor workshop</a>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                </button>
+            </div>
+            <div class="floorplan__img">
+                <svg class="svgmap" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 1080"
+                    style="enable-background:new 0 0 1920 1080;enable-background:new 0 0 1920 1080;margin-left: 2em;"
+                    xml:space="preserve">
+                    <g>
+                        <path style="fill:#C2C2C2;"
+                            d="M873.73,489.48c0,68.91,0,137.33,0,206.21c-3.77,0.24-7,0.44-10.08,0.64
                                 c-1.22,2.51,0.15,5.51-2.74,7.28c-27.43,0-55.17,0-83.36,0c-0.33-2.53-0.63-4.75-0.96-7.27c-3.34-0.25-6.57-0.48-10.17-0.75
                                 c0-104.82,0-209.18,0-314.07c22.34,0,44.37,0,67.21,0c0,5.57,0,11.11,0,17.06c6.68,0,12.57,0,18.55,0
                                 c14.85-48.55,45.68-82.63,96.51-89.86c71.05-10.11,119.98,20.81,144.07,89.85c0-12.8,0-25.61,0-38.98c14.64,0,28.46,0,42.95,0
@@ -109,31 +121,41 @@
                                 c0-3.15,0-5.72,0-8.86c-6.12,1.17-10.6,3.96-15.35,8.86C950.18,389.73,954.72,389.73,959.66,389.73z M827.42,470.17
                                 c0,1.64,0,2.98,0,4.51c5.55,0,10.77,0,16.47,0c-0.12-1.69-0.22-3.03-0.33-4.51C838.11,470.17,833.15,470.17,827.42,470.17z
                                 M984.36,381.54c0,2.89,0,4.9,0,6.97c4.94,0,9.55,0,16.62,0C994.12,385.63,989.55,383.71,984.36,381.54z M1117.49,470.33
-                                c-7.54,0-12.76,0-17.97,0c-1.2,4.43,1.92,3.86,3.94,3.58C1107.59,473.34,1112.66,475.96,1117.49,470.33z"/>
-                            <path style="fill:#2C2C2C;" d="M1165.1,588.91"/>
-                        </g>
-                        <text id="3.23" class="Workshop__Btn" transform="matrix(1 0 0 1 1133.7871 407.4041)" style="font-family:'MyriadPro-Regular'; font-size:12px;">3.23</text>
-                        <text id="3.26" class="Workshop__Btn" transform="matrix(1 0 0 1 1138.8936 540.681)" style="font-family:'MyriadPro-Regular'; font-size:12px;">3.26</text>
-                        <text id="3.27" class="Workshop__Btn" transform="matrix(1 0 0 1 1136.8513 596.3406)" style="font-family:'MyriadPro-Regular'; font-size:12px;">3.27</text>
-                        <text id="3.28" class="Workshop__Btn" transform="matrix(1 0 0 1 1108.7661 677.0217)" style="font-family:'MyriadPro-Regular'; font-size:12px;">3.28</text>
-                        <text id="3.03" class="Workshop__Btn" transform="matrix(1 0 0 1 790.1274 415.5745)" style="font-family:'MyriadPro-Regular'; font-size:12px;">3.03</text>
-                        <text id="3.04" class="Workshop__Btn" transform="matrix(1 0 0 1 781.9575 508.5108)" style="font-family:'MyriadPro-Regular'; font-size:12px;">3.04</text>
-                        <text id="3.05" class="Workshop__Btn" transform="matrix(1 0 0 1 786.5533 550.8936)" style="font-family:'MyriadPro-Regular'; font-size:12px;">3.05</text>
-                        <text id="3.06" class="Workshop__Btn" transform="matrix(1 0 0 1 785.0213 602.4677)" style="font-family:'MyriadPro-Regular'; font-size:12px;">3.06</text>
-                        <text id="3.08" class="Workshop__Btn" transform="matrix(1 0 0 1 809.532 675.4892)" style="font-family:'MyriadPro-Regular'; font-size:12px;">3.08</text>
-                    </svg>
-                </div>
+                                c-7.54,0-12.76,0-17.97,0c-1.2,4.43,1.92,3.86,3.94,3.58C1107.59,473.34,1112.66,475.96,1117.49,470.33z" />
+                        <path style="fill:#2C2C2C;" d="M1165.1,588.91" />
+                    </g>
+                    <text id="3.23" class="Workshop__Btn" transform="matrix(1 0 0 1 1133.7871 407.4041)"
+                        style="font-family:'MyriadPro-Regular'; font-size:12px;">3.23</text>
+                    <text id="3.26" class="Workshop__Btn" transform="matrix(1 0 0 1 1138.8936 540.681)"
+                        style="font-family:'MyriadPro-Regular'; font-size:12px;">3.26</text>
+                    <text id="3.27" class="Workshop__Btn" transform="matrix(1 0 0 1 1136.8513 596.3406)"
+                        style="font-family:'MyriadPro-Regular'; font-size:12px;">3.27</text>
+                    <text id="3.28" class="Workshop__Btn" transform="matrix(1 0 0 1 1108.7661 677.0217)"
+                        style="font-family:'MyriadPro-Regular'; font-size:12px;">3.28</text>
+                    <text id="3.03" class="Workshop__Btn" transform="matrix(1 0 0 1 790.1274 415.5745)"
+                        style="font-family:'MyriadPro-Regular'; font-size:12px;">3.03</text>
+                    <text id="3.04" class="Workshop__Btn" transform="matrix(1 0 0 1 781.9575 508.5108)"
+                        style="font-family:'MyriadPro-Regular'; font-size:12px;">3.04</text>
+                    <text id="3.05" class="Workshop__Btn" transform="matrix(1 0 0 1 786.5533 550.8936)"
+                        style="font-family:'MyriadPro-Regular'; font-size:12px;">3.05</text>
+                    <text id="3.06" class="Workshop__Btn" transform="matrix(1 0 0 1 785.0213 602.4677)"
+                        style="font-family:'MyriadPro-Regular'; font-size:12px;">3.06</text>
+                    <text id="3.08" class="Workshop__Btn" transform="matrix(1 0 0 1 809.532 675.4892)"
+                        style="font-family:'MyriadPro-Regular'; font-size:12px;">3.08</text>
+                </svg>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <?php $this->view("partials/footer"); ?>
+    <!-- Footer -->
+    <?php $this->view("partials/footer"); ?>
 
-        
-        <!-- Javascripts -->
-        <script src="../public/js/script.js"></script>
-        <!-- Icon Javascripts -->
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    </body>
+
+    <!-- Javascripts -->
+    <script src="../public/js/script.js"></script>
+    <!-- Icon Javascripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>

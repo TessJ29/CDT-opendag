@@ -24,8 +24,8 @@ body{
             }
             div.floorplan__img{
                 svg{
-                    // height: 10rem;
-                    // width: 10rem;
+                    height: 4rem;
+                    width: 10rem;
                     text.Workshop__Btn{
                         padding: 1rem;
                     }
@@ -33,4 +33,10 @@ body{
             }
         }
     }
+}
+
+.svgmap{
+    width: 10em;
+    zoom: 700%;
+    transform: scale(2);
 }
