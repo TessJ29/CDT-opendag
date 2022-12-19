@@ -6,6 +6,7 @@ class Survey extends Controller
 
     public function __construct()
     {
+        // var_dump($_POST);
         $this->surveyModel = $this->model('SurveyModel');
     }
 
@@ -14,11 +15,13 @@ class Survey extends Controller
         $this->view('Survey');
     }
 
+    public function SurveyMessage()
+    {
+        $this->view('SurveyMessage');
+    }
+
     public function create()
     {
-        // var_dump($_POST);
-        // var_dump($_SERVER);
-
         $data = [
             'title' => '',
             'QuestionError' => ''
@@ -38,27 +41,18 @@ class Survey extends Controller
             $data = $this->validateQuestionForm($data);
 
             if (empty($data['QuestionError'])) {
-                var_dump($result);
+                // var_dump($result);
                 if ($result) {
                     $data['title'] = "<p>Wij hebben uw antwoorden opgeslagen</p>";
                 } else {
-                    echo "<p>Het opslaan van uw antwoorden is niet gelukt</p>";
+                    $data['QuestionError'] = "<p>Het opslaan van uw antwoorden is niet gelukt</p>";
                 }
-                header('Refresh:3; url=' . URLROOT . '/survey');
+                header('Location: /index');
             } else {
-                header('Refresh:3; url=' . URLROOT . '/survey');
+                header('Location: /index');
+
             }
         }
-        // try {
-
-        //     $this->surveyModel->createAnswer($_POST);
-        //     header("Location:" . URLROOT . "/index");
-
-        // } catch (PDOException $e) {
-        //     // echo "Het inserten van het record is niet gelukt";
-        //     // header("Location:" . URLROOT . "/survey");
-        // }
-
         $this->view('Survey', $data);
     }
 

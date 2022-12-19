@@ -8,8 +8,7 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../public/scss/main.css">
 
-    <title>Document</title>
-
+    <title>MBO Utrecht</title>
 </head>
 
 <body>
@@ -176,17 +175,14 @@
             <div class="text">
                 <h4>Dit is het einde van de vragenlijst.</h4>
                 <h5>Als u klaar bent met het invullen van het formulier, druk dan op versturen</h5>
-                <?=var_dump($data);?>
-                <div class="QuestionError"><?= $data['QuestionError']; ?></div>
-
             </div>
             <div class="buttons">
                 <a href="#" class="btn" data-set-step="6">Vorige</a>
                 <input type="submit" value="Versturen">
             </div>
         </div>
-        </form>
     </div>
+    </form>
     <script src="../../public/js/script.js"></script>
 
     <?php if (!empty($_POST)) : ?>
