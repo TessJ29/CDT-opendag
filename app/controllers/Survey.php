@@ -15,11 +15,6 @@ class Survey extends Controller
         $this->view('Survey');
     }
 
-    public function SurveyMessage()
-    {
-        $this->view('SurveyMessage');
-    }
-
     public function create()
     {
         $data = [
